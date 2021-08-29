@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     margin: 0;
     display: grid;
     place-items: center;
     min-height: 100vh;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', cursive;
     background-color: #0e0b0d;
     color: white;
 }
