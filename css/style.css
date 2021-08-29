@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     font-family: 'Righteous', cursive;
     background-color: #0e0b0d;
+    color: white;
 }
 
 main {
@@ -16,6 +17,19 @@ main {
     padding: 20px;
 }
 
-hr {
+.wip {
+    padding: 20px 0;
     width: clamp(20vw, 320px, 40vw);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+a {
+    color: inherit;
 }
