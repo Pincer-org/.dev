@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Righteous', cursive;
+    background-color: #0e0b0d;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+hr {
+    width: clamp(20vw, 320px, 40vw);
+}
