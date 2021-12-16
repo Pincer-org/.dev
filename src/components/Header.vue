@@ -3,16 +3,16 @@
     <nav :class="{ 'open' : menuOpen }">
       <ul>
         <li>
-          <a href="https://discord/pincer">discord</a>
+          <a href="https://discord/pincer">Discord</a>
         </li>
         <li>
-          <a href="https://pypi.org/project/Pincer">pypi</a>
+          <a href="https://pypi.org/project/Pincer">PyPI</a>
         </li>
         <li>
-          <a href="https://docs.pincer.dev">documentation</a>
+          <a href="https://docs.pincer.dev">Documentation</a>
         </li>
         <li>
-          <a href="https://github.com/pincer-org/pincer">Github</a>
+          <a href="https://github.com/pincer-org/pincer">GitHub</a>
         </li>
       </ul>
     </nav>
@@ -24,11 +24,11 @@
         </a>
       </div>
       <a id="hamburger" class="hamburger" @click="menuOpen = !menuOpen" :class="{ 'rotated' : menuOpen }">
-        <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="black" stroke-linejoin="round" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round">
-            <path d="M1.41516 1.79492H32.1134"/>
-            <path d="M4.91504 11.0708H28.6135"/>
-            <path d="M7.61475 20.3467H25.9137"/>
+        <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g fill="black">
+            <path d="M0 0H32V3H0V0Z"/>
+            <path d="M0 12H32V15H0V12Z"/>
+            <path d="M0 24H32V27H0V24Z"/>
           </g>
         </svg>
       </a>
@@ -56,7 +56,7 @@ a {
 
   &.hamburger {
       svg g {
-        stroke: var(--text-color)
+        fill: var(--text-color)
       }
 
     &.rotated {
@@ -64,6 +64,7 @@ a {
     }
 
     transition: 0.3s ease-in-out;
+    display: flex;
   }
 
   font-weight: 500;

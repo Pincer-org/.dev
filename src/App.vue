@@ -22,4 +22,8 @@ import Footer from "./components/Footer.vue";
 body {
   background-color: var(--main-background-color);
 }
+
+main {
+  padding: 0 20px;
+}
 </style>
