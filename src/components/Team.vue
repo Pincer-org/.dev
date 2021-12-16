@@ -1,3 +1,6 @@
+<script setup>
+  import BlueButton from '../components/buttons/BlueButton.vue'
+</script>
 <template>
   <h2>Meet our core team</h2>
   <p>
@@ -49,14 +52,19 @@
       </figcaption>
     </figure>
   </div>
+  <BlueButton text="Apply to join" link="mailto:contact@Pincer.dev"/>
 </template>
 <style lang="scss" scoped>
+h2 {
+  margin-top: 40px;
+}
+
 .team {
   font-size: 0.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .member {
@@ -68,6 +76,7 @@
 
   p {
     margin: 0;
+    text-align: justify;
   }
 
   img {
