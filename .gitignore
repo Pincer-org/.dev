@@ -1,2 +1,7 @@
+# IDE Configuration Folder
 .idea
-.min
+.vs
+.vscode
+
+# Nodes Module
+node_modules
