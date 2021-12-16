@@ -1,3 +1,5 @@
 body {
-  font-size: clamp(10px, 1vw, 16px);
+  color: var(--text-color);
+  font-size: clamp(12px, 1vw, 24px);
+  font-family: 'Poppins', sans-serif;
 }
