@@ -19,7 +19,9 @@
     <div class="mobile-header">
       <div class="left">
         <a href="/" class="logo">
-          <img alt="logo" src="icon.svg" width="40"/>
+          <div class="spin-container">
+            <img alt="logo" src="icon.svg" width="40"/>
+          </div>
           Pincer
         </a>
       </div>
@@ -37,6 +39,25 @@
 </template>
 
 <style lang="scss" scoped>
+@keyframes spinFade {
+  0% {
+    opacity: 0;
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes Giggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
 .mobile-header {
   position: relative;
   background-color: var(--header-background-color);
@@ -47,11 +68,25 @@
   padding: 0 20px;
 }
 
+.spin-container {
+  animation: spinFade 1s cubic-bezier(.35,-0.21,.04,1.52);
+  display: flex;
+}
+
 a {
   &.logo {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    &:hover img, &:focus img {
+      animation: Giggle 1s cubic-bezier(.35,-0.21,.04,1.52) infinite;
+    }
+
+    &:focus {
+      text-decoration: underline;
+      outline: none;
+    }
   }
 
   &.hamburger {
@@ -60,7 +95,24 @@ a {
       }
 
     &.rotated {
-      transform: rotate(180deg);
+      svg g path {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          transform-origin: center;
+          transform: rotate(360deg);
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform-origin: bottom left;
+          transform: rotate(-45deg);
+        }
+
+        transition: all 0.3s ease;
+      }
     }
 
     transition: 0.3s ease-in-out;
@@ -80,7 +132,7 @@ nav {
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 
-  &.open {
+  &.open, &:focus-within {
     transform: translateY(0);
   }
 
@@ -94,6 +146,12 @@ nav {
 
   li {
     list-style: none;
+
+    &:hover, a:focus {
+      outline: none;
+      transform: translateX(5px);
+      text-decoration: underline;
+    }
   }
 }
 </style>

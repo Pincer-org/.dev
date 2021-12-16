@@ -156,6 +156,11 @@
       align-items: center;
       list-style: none;
       margin: 10px 0;
+
+      &:hover, a:focus {
+        outline: 0;
+        text-decoration: underline dotted;
+      }
     }
 
     padding-left: 0;
