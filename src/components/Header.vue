@@ -1,20 +1,5 @@
 <template>
   <header>
-    <div class="left">
-      <a href="/" class="logo">
-        <img alt="Pincer logo" src="icon.svg" width="40"/>
-        Pincer
-      </a>
-    </div>
-    <a id="hamburger" class="hamburger" @click="menuOpen = !menuOpen" :class="{ 'rotated' : menuOpen }">
-      <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="black" stroke-linejoin="round" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round">
-          <path d="M1.41516 1.79492H32.1134"/>
-          <path d="M4.91504 11.0708H28.6135"/>
-          <path d="M7.61475 20.3467H25.9137"/>
-        </g>
-      </svg>
-    </a>
     <nav :class="{ 'open' : menuOpen }">
       <ul>
         <li>
@@ -31,11 +16,28 @@
         </li>
       </ul>
     </nav>
+    <div class="mobile-header">
+      <div class="left">
+        <a href="/" class="logo">
+          <img alt="logo" src="icon.svg" width="40"/>
+          Pincer
+        </a>
+      </div>
+      <a id="hamburger" class="hamburger" @click="menuOpen = !menuOpen" :class="{ 'rotated' : menuOpen }">
+        <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="black" stroke-linejoin="round" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round">
+            <path d="M1.41516 1.79492H32.1134"/>
+            <path d="M4.91504 11.0708H28.6135"/>
+            <path d="M7.61475 20.3467H25.9137"/>
+          </g>
+        </svg>
+      </a>
+    </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
-header {
+.mobile-header {
   position: relative;
   background-color: var(--header-background-color);
   height: 80px;
@@ -74,7 +76,6 @@ nav {
   position: absolute;
   width: 100%;
   left: 0;
-  z-index: -1;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 
