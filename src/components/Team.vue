@@ -9,43 +9,43 @@
     <figure class="member">
       <img src="img/sigma.png" alt="sigma"/>
       <figcaption>
-        <p>Sigmanificient,</p>
+        <a href="https://github.com/Sigmanificient">Sigmanificient,</a>
         <p>Founder</p>
       </figcaption>
     </figure>
     <figure class="member">
       <img src="img/arthurdw.png" alt="arthurdw"/>
       <figcaption>
-        <p>Arthurdw,</p>
+        <a href="https://github.com/Arthurdw">Arthurdw,</a>
         <p>Co-Founder</p>
       </figcaption>
     </figure>
     <figure class="member">
       <img src="img/lunarmagpie.png" alt="lunarmagpie"/>
       <figcaption>
-        <p>Lunarmagpie,</p>
+        <a href="https://github.com/Lunarmagpie">Lunarmagpie,</a>
         <p>Main Maintainer</p>
       </figcaption>
     </figure>
     <figure class="member">
       <img src="img/endercheif.png" alt="endercheif"/>
       <figcaption>
-        <p>Endercheif,</p>
+        <a href="https://github.com/Endercheif">Endercheif,</a>
         <p>Maintainer</p>
       </figcaption>
     </figure>
     <figure class="member">
       <img src="img/trag1c.png" alt="trag1c"/>
       <figcaption>
-        <p>trag1c,</p>
+        <a href="https://github.com/trag1c">trag1c,</a>
         <p>Maintainer</p>
       </figcaption>
     </figure>
     <figure class="member">
       <img src="img/other.png" alt="someone else"/>
       <figcaption>
-        <p>Maybe You?</p>
-        <p></p>
+        <a href="https://github.com">Maybe You?,</a>
+        <p>Future Maintainer</p>
       </figcaption>
     </figure>
   </div>
