@@ -2,7 +2,7 @@
   <header>
     <div class="left">
       <a href="/" class="logo">
-        <img alt="Pincer logo" src="icon.png" width="40px"/>
+        <img alt="Pincer logo" src="icon.svg" width="40"/>
         Pincer
       </a>
     </div>
@@ -44,7 +44,6 @@ header {
   align-items: center;
   padding: 0 20px;
 }
-
 
 a {
   &.logo {
