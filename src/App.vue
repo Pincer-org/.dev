@@ -1,9 +1,13 @@
+<script setup>
+import Header from "./components/Header.vue";
+</script>
+
 <template>
-  <p>Hello, World!</p>
+  <Header/>
 </template>
 
 <style lang="scss">
 body {
-  margin: 0;
+  background-color: var(--main-background-color);
 }
 </style>
