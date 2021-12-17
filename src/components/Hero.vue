@@ -3,6 +3,7 @@
   import GhButton from './buttons/GhButton.vue'
 
   import BlockCode from './demo/BlockCode.vue'
+  import Command from "./demo/Command.vue";
 </script>
 <template>
   <div class="hero">
@@ -129,7 +130,7 @@
     </div>
     <div class="right">
       <BlockCode />
-      <img src="img/discord_command_demo.png" alt="An user writing and triggering the /say example command.">
+      <Command />
       <img src="img/command_output.png" alt="The result of the /say command.">
     </div>
   </div>
