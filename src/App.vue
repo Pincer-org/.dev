@@ -19,6 +19,11 @@ import Footer from "./components/Footer.vue";
 </template>
 
 <style lang="scss">
+*::selection {
+  background-color: var(--header-background-color);
+  color: var(--text-color-secondary);
+}
+
 body {
   background-color: var(--main-background-color);
 }

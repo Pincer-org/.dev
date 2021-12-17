@@ -14,6 +14,7 @@ defineProps({text: String, link: String})
 
   transition: all 0.1s ease-in-out;
   box-shadow: 0 4px var(--button-shadow-color);
+  user-select: none;
 
   &:focus-within:not(:active) {
     border: 1px solid var(--text-color);
