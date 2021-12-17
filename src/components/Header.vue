@@ -91,27 +91,34 @@ a {
 
   &.hamburger {
       svg g {
-        fill: var(--text-color)
+        transition: all 0.3s ease;
+        fill: var(--text-color);
+
+        path {
+          transition: all 0.3s ease;
+        }
       }
 
     &.rotated {
-      svg g path {
-        &:nth-child(1) {
-          transform: rotate(45deg);
-        }
+      svg g {
+        transform: translateX(3px);
 
-        &:nth-child(2) {
-          transform-origin: center;
-          transform: rotate(360deg);
-          opacity: 0;
-        }
+        path {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+          }
 
-        &:nth-child(3) {
-          transform-origin: bottom left;
-          transform: rotate(-45deg);
-        }
+          &:nth-child(2) {
+            transform-origin: center;
+            transform: rotate(360deg);
+            opacity: 0;
+          }
 
-        transition: all 0.3s ease;
+          &:nth-child(3) {
+            transform-origin: bottom left;
+            transform: rotate(-45deg) translateY(-1.5px) translateX(0.5px);
+          }
+        }
       }
     }
 
