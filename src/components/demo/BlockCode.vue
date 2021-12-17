@@ -96,7 +96,7 @@ figure {
     margin: 0;
     padding: 0 20px;
     background: #363D4E;
-    overflow: scroll;
+    overflow-x: scroll;
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
   }

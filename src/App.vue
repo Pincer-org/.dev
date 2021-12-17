@@ -19,6 +19,30 @@ import Footer from "./components/Footer.vue";
 </template>
 
 <style lang="scss">
+// give member their scrollbar scss style
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+
+  &-track {
+    background: var(--main-background-color);
+  }
+
+  &-thumb {
+    background: var(--header-background-color);
+  }
+
+  &-corner {
+    background: var(--main-background-color);
+  }
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--button-color) grey;
+}
+
 *::selection {
   background-color: var(--header-background-color);
   color: var(--text-color-secondary);
