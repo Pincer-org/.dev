@@ -1,6 +1,8 @@
 <script setup>
   import BlueButton from './buttons/BlueButton.vue'
   import GhButton from './buttons/GhButton.vue'
+
+  import BlockCode from './demo/BlockCode.vue'
 </script>
 <template>
   <div class="hero">
@@ -126,8 +128,7 @@
       </nav>
     </div>
     <div class="right">
-      <img src="img/window_code_block.png"
-           alt="API simple Discord bottom with a /say command written written using pincer."/>
+      <BlockCode />
       <img src="img/discord_command_demo.png" alt="An user writing and triggering the /say example command.">
       <img src="img/command_output.png" alt="The result of the /say command.">
     </div>
