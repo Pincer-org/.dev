@@ -55,9 +55,6 @@ const getToken = () => {
 
 window.onload = () => {
   const token = document.getElementById("token");
-  const x = window.matchMedia("(min-width: 720px)")
-
-  if (!x.matches) return
 
   // Take 24 random char from base64
   const tokenValue = Array.from({ length: 24 }, () => base64[Math.floor(Math.random() * base64.length)]).join('')

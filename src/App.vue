@@ -39,8 +39,7 @@ import Footer from "./components/Footer.vue";
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--button-color) grey;
+  scrollbar-color: var(--button-color) var(--main-background-color);
 }
 
 *::selection {
