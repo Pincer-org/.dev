@@ -167,7 +167,7 @@
 
       &:hover, a:focus {
         outline: 0;
-        text-decoration: underline dotted;
+        text-decoration: underline;
       }
     }
 

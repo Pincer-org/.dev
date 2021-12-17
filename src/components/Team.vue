@@ -65,6 +65,11 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-bottom: 20px;
+
+  a:focus, a:hover {
+    text-decoration: underline;
+    outline: none;
+  }
 }
 
 .member {
