@@ -5,6 +5,11 @@ import T from './T.vue'
   <figure>
     <figcaption>
       <p>bot.py</p>
+      <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="32" cy="4" rx="4.00001" ry="4" fill="#DC5252"/>
+        <ellipse cx="18.0005" cy="4" rx="4.00001" ry="4" fill="#D6985E"/>
+        <ellipse cx="4.00001" cy="4" rx="4.00001" ry="4" fill="#8ECF4E"/>
+      </svg>
     </figcaption>
     <pre>
       <code>
@@ -20,7 +25,7 @@ import T from './T.vue'
     <T c="p">return</T> <T c="b">Embed</T>(
       <T c="k">description</T>=(
         <T c="g">f"</T>{<T c="k">ctx</T>.author.mention}<T c="g"> said:\n"</T>
-        <T c="p">f"</T>`{<T c="k">message</T>}<T c="g">`"</T>
+        <T c="g">f"`</T>{<T c="k">message</T>}<T c="g">`"</T>
       )
     )
 
@@ -64,9 +69,41 @@ window.onload = () => {
   );
 }
 </script>
-<style scoped>
-code {
-  white-space: pre;
-  color: #B3BDDF;
+<style lang="scss" scoped>
+figure {
+  margin: 0;
+  padding: 0;
+  width: min(640px, calc(100vw - 40px));
+
+  figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #2B3448;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.33);
+    padding: 10px 20px;
+
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  pre {
+    margin: 0;
+    padding: 0 20px;
+    background: #363D4E;
+    overflow: scroll;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+  }
+
+  code {
+    white-space: pre;
+    color: #B3BDDF;
+  }
 }
 </style>
