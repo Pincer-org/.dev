@@ -1,21 +1,35 @@
 <script setup>
-import Header from "./components/Header.vue";
-import Hero from "./components/Hero.vue";
-import Pincer from "./components/Pincer.vue";
-import Team from "./components/Team.vue";
-import Related from "./components/Related.vue";
-import Footer from "./components/Footer.vue";
+import Header from "@/components/Header.vue";
+import Hero from "@/components/Hero.vue";
+import Pincer from "@/components/Pincer.vue";
+import Team from "@/components/Team.vue";
+import Related from "@/components/Related.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Hero,
+    Pincer,
+    Team,
+    Related,
+    Footer
+  },
+}
 </script>
 
 <template>
-  <Header/>
-  <main>
-    <Hero/>
-    <Pincer/>
-    <Team/>
-    <Related/>
-  </main>
-  <Footer/>
+  <div id="app">
+    <Header/>
+    <main>
+      <Hero/>
+      <Pincer/>
+      <Team/>
+      <Related/>
+    </main>
+    <Footer/>
+  </div>
 </template>
 
 <style lang="scss">
