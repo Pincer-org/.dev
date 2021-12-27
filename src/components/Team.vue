@@ -90,3 +90,8 @@ h2 {
   }
 }
 </style>
+<script>
+  export default {
+    name: 'Team'
+  }
+</script>

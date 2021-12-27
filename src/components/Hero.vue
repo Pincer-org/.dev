@@ -1,11 +1,3 @@
-<script setup>
-  import BlueButton from './buttons/BlueButton.vue'
-  import GhButton from './buttons/GhButton.vue'
-
-  import BlockCode from './demo/BlockCode.vue'
-  import Command from "./demo/Command.vue";
-  import Embed from "./demo/Embed.vue";
-</script>
 <template>
   <div class="hero">
     <div class="left">
@@ -188,3 +180,21 @@
     }
   }
 </style>
+<script>
+  import BlueButton from './buttons/BlueButton.vue'
+  import GhButton from './buttons/GhButton.vue'
+
+  import BlockCode from './demo/BlockCode.vue'
+  import Command from "./demo/Command.vue";
+  import Embed from "./demo/Embed.vue";
+
+  export default {
+    components: {
+      BlueButton,
+      GhButton,
+      BlockCode,
+      Command,
+      Embed
+    }
+  }
+</script>

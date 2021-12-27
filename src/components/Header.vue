@@ -25,7 +25,7 @@
           Pincer
         </a>
       </div>
-      <a id="hamburger" class="hamburger" @click="menuOpen = !menuOpen" :class="{ 'rotated' : menuOpen }">
+      <a id="hamburger" class="hamburger" @click="toggleMenu()" :class="{ 'rotated' : menuOpen }">
         <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g fill="black">
             <path d="M0 0H32V3H0V0Z"/>

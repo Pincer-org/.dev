@@ -32,3 +32,8 @@ p {
   text-align: justify;
 }
 </style>
+<script>
+export default {
+  name: 'Related'
+}
+</script>

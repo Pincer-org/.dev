@@ -19,3 +19,8 @@ p {
   margin: 0;
 }
 </style>
+<script>
+export default {
+  name: "Footer"
+};
+</script>

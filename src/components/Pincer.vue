@@ -51,3 +51,8 @@
     gap: 40px;
   }
 </style>
+<script>
+export default {
+  name: 'Pincer'
+}
+</script>

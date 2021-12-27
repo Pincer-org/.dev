@@ -67,3 +67,8 @@ span.block {
   color: #C4C5C6;
 }
 </style>
+<script>
+export default {
+  name: 'Command'
+}
+</script>

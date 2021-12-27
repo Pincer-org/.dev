@@ -3,7 +3,7 @@ export default {
   props: {
     c: {
       type: String
-    },
+    }
   }
 }
 </script>

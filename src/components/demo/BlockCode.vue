@@ -1,6 +1,3 @@
-<script setup>
-import T from './T.vue'
-</script>
 <template>
   <figure>
     <figcaption>
@@ -56,14 +53,19 @@ const getToken = () => {
 window.onload = () => {
   const token = document.getElementById("token");
 
-  // Take 24 random char from base64
-  const tokenValue = Array.from({ length: 24 }, () => base64[Math.floor(Math.random() * base64.length)]).join('')
-
-
   setInterval(() => {
         token.innerHTML = getToken();
       }, 3000
   );
+}
+
+import T from './T.vue'
+
+export default {
+  name: 'BlockCode',
+  components: {
+    T
+  },
 }
 </script>
 <style lang="scss" scoped>

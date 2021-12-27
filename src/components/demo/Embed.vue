@@ -28,3 +28,8 @@
 
   }
 </style>
+<script>
+  export default {
+    name: 'Embed'
+  }
+</script>
