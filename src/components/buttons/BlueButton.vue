@@ -1,5 +1,15 @@
-<script setup>
-defineProps({text: String, link: String})
+<script>
+export default {
+  props: {
+    text: {
+      type: String
+    },
+    link: {
+      type: String
+    },
+  }
+}
+
 </script>
 <template>
   <a class="btn" v-bind:href=link target="_blank">{{ text }}</a>

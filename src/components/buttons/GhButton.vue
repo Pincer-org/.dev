@@ -1,5 +1,20 @@
-<script setup>
-defineProps({href: String, badgeUrl: String, alt: String})
+<script>
+export default {
+  props: {
+    href: {
+      type: String,
+      default: '#'
+    },
+    badgeUrl: {
+      type: String,
+      default: ''
+    },
+    alt: {
+      type: String,
+      default: ''
+    }
+  }
+}
 </script>
 <template>
   <a v-bind:href=href tabindex="-1">

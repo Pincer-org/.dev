@@ -1,5 +1,11 @@
 <script setup>
-defineProps({c: String})
+export default {
+  props: {
+    c: {
+      type: String
+    },
+  }
+}
 </script>
 <template>
   <span v-bind:class=c>
