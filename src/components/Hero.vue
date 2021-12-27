@@ -4,6 +4,7 @@
 
   import BlockCode from './demo/BlockCode.vue'
   import Command from "./demo/Command.vue";
+  import Embed from "./demo/Embed.vue";
 </script>
 <template>
   <div class="hero">
@@ -131,7 +132,7 @@
     <div class="right">
       <BlockCode />
       <Command />
-      <img src="img/command_output.png" alt="The result of the /say command.">
+      <Embed/>
     </div>
   </div>
 </template>

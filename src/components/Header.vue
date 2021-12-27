@@ -96,6 +96,10 @@ a {
 
         path {
           transition: all 0.3s ease;
+
+          &:nth-child(3) {
+            transform-origin: bottom left;
+          }
         }
       }
 
@@ -115,7 +119,6 @@ a {
           }
 
           &:nth-child(3) {
-            transform-origin: bottom left;
             transform: rotate(-45deg) translateY(-1.5px) translateX(0.5px);
           }
         }
