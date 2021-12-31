@@ -42,19 +42,19 @@
 @keyframes spinFade {
   0% {
     opacity: 0;
-    transform: rotateZ(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
 @keyframes Giggle {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotateZ(5deg);
+    transform: rotate(5deg);
   }
   100% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
 }
 
