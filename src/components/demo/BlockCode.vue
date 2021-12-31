@@ -1,11 +1,11 @@
 <template>
-  <figure>
+  <figure :class="{'closed': closed, 'hide': hide}">
     <figcaption>
       <p>bot.py</p>
       <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="32" cy="4" rx="4.00001" ry="4" fill="#DC5252"/>
-        <ellipse cx="18.0005" cy="4" rx="4.00001" ry="4" fill="#D6985E"/>
-        <ellipse cx="4.00001" cy="4" rx="4.00001" ry="4" fill="#8ECF4E"/>
+        <ellipse cx="32" cy="4" rx="4.00001" ry="4" fill="#DC5252" @click="close()"/>
+        <ellipse cx="18.0005" cy="4" rx="4.00001" ry="4" fill="#D6985E" />
+        <ellipse cx="4.00001" cy="4" rx="4.00001" ry="4" fill="#8ECF4E" />
       </svg>
     </figcaption>
     <pre>
@@ -66,6 +66,21 @@ export default {
   components: {
     T
   },
+  data() {
+    return {
+      closed: false,
+      hide: false
+    }
+  },
+  methods: {
+    close() {
+      this.closed = true
+
+      setTimeout(() => {
+        this.hide = true
+      }, 1000)
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -82,9 +97,7 @@ figure {
     background: #2B3448;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.33);
     padding: 10px 20px;
-
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
+    border-radius: .5em .5em 0 0;
 
     p {
       margin: 0;
@@ -103,6 +116,38 @@ figure {
   code {
     white-space: pre;
     color: #B3BDDF;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      transform: scaleY(1);
+    }
+
+    100% {
+      transform-origin: top right;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+  }
+
+  &.closed {
+    animation: fadeOut .5s ease-in-out forwards;
+  }
+
+  &.hide {
+    animation: fadeOut 1s cubic-bezier(.35,-0.21,.04,1.52) reverse forwards;
+
+    & > figcaption, pre {
+      display: none;
+    }
+
+    &::after {
+      content: "Ooops...";
+    }
   }
 }
 </style>
