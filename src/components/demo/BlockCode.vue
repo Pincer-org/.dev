@@ -118,28 +118,12 @@ figure {
     color: #B3BDDF;
   }
 
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-
-    50% {
-      transform: scaleY(1);
-    }
-
-    100% {
-      transform-origin: top right;
-      transform: scaleY(0);
-      opacity: 0;
-    }
-  }
-
   &.closed {
-    animation: fadeOut .5s ease-in-out forwards;
+    animation: windowClose .5s ease-in-out forwards;
   }
 
   &.hide {
-    animation: fadeOut 1s cubic-bezier(.35,-0.21,.04,1.52) reverse forwards;
+    animation: windowClose 1s cubic-bezier(.35,-0.21,.04,1.52) reverse forwards;
 
     & > figcaption, pre {
       display: none;
