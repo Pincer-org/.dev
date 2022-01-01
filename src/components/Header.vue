@@ -69,7 +69,7 @@
 }
 
 .spin-container {
-  animation: spinFade 1s cubic-bezier(.35,-0.21,.04,1.52);
+  animation: spinFade 1s cubic-bezier(.35, -0.21, .04, 1.52);
   display: flex;
 }
 
@@ -80,7 +80,7 @@ a {
     gap: 20px;
 
     &:hover img, &:focus img {
-      animation: Giggle 1s cubic-bezier(.35,-0.21,.04,1.52) infinite;
+      animation: Giggle 1s cubic-bezier(.35, -0.21, .04, 1.52) infinite;
     }
 
     &:focus {
@@ -90,18 +90,20 @@ a {
   }
 
   &.hamburger {
-      svg g {
+    cursor: pointer;
+
+    svg g {
+      transition: all 0.3s ease;
+      fill: var(--text-color);
+
+      path {
         transition: all 0.3s ease;
-        fill: var(--text-color);
 
-        path {
-          transition: all 0.3s ease;
-
-          &:nth-child(3) {
-            transform-origin: bottom left;
-          }
+        &:nth-child(3) {
+          transform-origin: bottom left;
         }
       }
+    }
 
     &.rotated {
       svg g {
@@ -155,11 +157,26 @@ nav {
 
   li {
     list-style: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: all 0.3s ease-in-out;
+      background-color: var(--text-color-secondary);
+      height: 2px;
+    }
 
     &:hover, a:focus {
       outline: none;
-      transform: translateX(5px);
-      text-decoration: underline;
+      color: var(--text-color-secondary);
+
+      &::after{
+        width: 10%;
+      }
     }
   }
 }
