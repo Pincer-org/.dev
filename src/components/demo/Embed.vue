@@ -96,7 +96,7 @@
     font-size: 0.8em;
     margin-left: calc(2em + 32px);
     background-color: var(--header-background-color);
-    padding: 1em;
+    padding: 1em 1.5em;
     border-radius: .4em;
     border-left: .4em solid var(--discord-darker-color);
     width: max-content;
