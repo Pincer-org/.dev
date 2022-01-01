@@ -139,6 +139,7 @@ nav {
   left: 0;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
+  overflow-x: hidden;
 
   &.open, &:focus-within {
     transform: translateY(0);
