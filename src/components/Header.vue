@@ -113,9 +113,7 @@ a {
           }
 
           &:nth-child(2) {
-            transform-origin: center;
-            transform: rotate(360deg);
-            opacity: 0;
+            transform: scaleX(0)
           }
 
           &:nth-child(3) {

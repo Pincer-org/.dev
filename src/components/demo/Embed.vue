@@ -41,6 +41,7 @@
     }
 
     svg {
+      margin-top: .5rem;
       width: 32px;
     }
 
