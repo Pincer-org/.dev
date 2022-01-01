@@ -48,23 +48,23 @@
   }
 
   .up {
-    background-color: #2B3448;
+    background-color: var(--header-background-color);
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
   }
   
   .down {
-    background-color: #363D4E;
+    background-color: var(--discord-lighter-color);
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
   }
 
 span.block {
   font-size: .75em;
-  background: #191C2B;
+  background: var(--discord-darker-color);
   padding: .2rem .4rem;
   border-radius: .25rem;
-  color: #C4C5C6;
+  color: var(--text-color-secondary);
 }
 </style>
 <script>

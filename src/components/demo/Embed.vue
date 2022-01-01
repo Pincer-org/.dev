@@ -17,7 +17,7 @@
 </template>
 <style scoped>
   .embed-container {
-    background: #363D4E;
+    background: var(--discord-lighter-color);
     border-radius: 6px;
 
     display: flex;
@@ -27,6 +27,26 @@
     gap: 1rem;
 
   }
+
+  .embed {
+    background-color: var(--header-background-color);
+    padding: 2em;
+    border-radius: 6px;
+  }
+
+  span.block {
+    background: var(--discord-darker-color);
+    padding: .2rem .4rem;
+    border-radius: .25rem;
+    color: var(--text-color-secondary);
+  }
+
+  span.ping {
+    background-color: var(--discord-ping-color);
+    padding: .2rem .4rem;
+    border-radius: .25rem;
+  }
+
 </style>
 <script>
   export default {
