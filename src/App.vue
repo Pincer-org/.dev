@@ -66,6 +66,10 @@ body {
 }
 
 main {
+  display: grid;
+  gap: 2em;
+  width: clamp(280px, calc(100% - 40px), 1400px);
   padding: 0 20px;
+  margin: 0 auto;
 }
 </style>
