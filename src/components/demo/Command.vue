@@ -1,7 +1,7 @@
 <template>
 	<div class="command">
 		<div class="up">
-			<img src="icon.svg" alt="Pincer logo">
+			<img src="@/assets/logo/icon.svg" alt="Pincer logo">
 			<header>
 				<h1>/say <span class="block">message</span></h1>
 				<p>Send a custom message!</p>
@@ -55,20 +55,20 @@ export default {
 }
 
 .up {
-	background-color: var(--header-background-color);
+	background-color: var(--bg-color-secondary);
 	border-top-left-radius: .5em;
 	border-top-right-radius: .5em;
 }
 
 .down {
-	background-color: var(--discord-lighter-color);
+	background-color: var(--discord-color-lighter);
 	border-bottom-left-radius: .5em;
 	border-bottom-right-radius: .5em;
 }
 
 span.block {
 	font-size: .75em;
-	background: var(--discord-darker-color);
+	background: var(--discord-color-darker);
 	padding: .2rem .4rem;
 	border-radius: .25rem;
 	color: var(--text-color-secondary);
