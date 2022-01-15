@@ -135,12 +135,12 @@
 </template>
 
 <script>
-import BlueButton from './buttons/BlueButton.vue'
-import GhButton from './buttons/GhButton.vue'
+import BlueButton from '../buttons/BlueButton.vue'
+import GhButton from '../buttons/GhButton.vue'
 
-import BlockCode from './demo/BlockCode.vue'
-import Command from "./demo/Command.vue";
-import Embed from "./demo/Embed.vue";
+import BlockCode from '../demo/BlockCode.vue'
+import Command from "../demo/Command.vue";
+import Embed from "../demo/Embed.vue";
 
 export default {
 	components: {

@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Hero from "@/components/Hero.vue";
-import Pincer from "@/components/Pincer.vue";
-import Team from "@/components/Team.vue";
-import Related from "@/components/Related.vue";
-import Footer from "@/components/Footer.vue";
+import Header from "@/components/partials/Header.vue";
+import Hero from "@/components/partials/Hero.vue";
+import Pincer from "@/components/partials/Pincer.vue";
+import Team from "@/components/partials/Team.vue";
+import Related from "@/components/partials/Related.vue";
+import Footer from "@/components/partials/Footer.vue";
 
 export default {
 	name: 'App',
