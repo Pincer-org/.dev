@@ -284,17 +284,14 @@ ul {
 			opacity: 0;
 			animation: slideInTopFade 1s ease forwards;
 			animation-delay: 1s;
-			transform: translateX(-5%) !important;
 		}
 
 		&-right {
 			padding-left: 4em;
-			transform: scaleX(-1) translateX(-5%) !important;
-			animation: slideInTopFade 1s ease forwards;
+			animation: slideInTopFadeInv 1s ease forwards;
 			animation-delay: 1.5s;
 			opacity: 0;
 		}
 	}
 }
-
 </style>

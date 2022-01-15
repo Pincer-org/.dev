@@ -142,4 +142,17 @@ img {
 		opacity: 1;
 	}
 }
+
+@keyframes slideInTopFadeInv {
+	0% {
+		transform: translateY(-5%) scaleX(-1);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0) scaleX(-1);
+		opacity: 1;
+	}
+}
+
 </style>
