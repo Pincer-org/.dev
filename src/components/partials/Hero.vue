@@ -236,6 +236,8 @@ ul {
 		gap: 64px;
 
 		.right {
+			display: flex;
+			flex-direction: column;
 			width: 110%;
 			gap: 0;
 		}

@@ -158,5 +158,13 @@ figure {
 	figure {
 		width: min(640px, 40vw);
 	}
+
+	.hide {
+		height: 32px;
+
+		&::after {
+			padding-left: 55%;
+		}
+	}
 }
 </style>
