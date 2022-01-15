@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .embed-container {
+	font-size: .75em;
 	background: var(--discord-color-lighter);
 	border-radius: 6px;
 	display: grid;
@@ -48,13 +49,14 @@ export default {
 	}
 
 	svg {
-		margin-top: .5rem;
+		margin-top: .25rem;
+		margin-bottom: .2rem;
 		width: 32px;
 	}
 
 	img {
-		height: 1.2em;
-		width: 1.2em;
+		height: .8em;
+		width: .8em;
 	}
 
 	p {
@@ -82,8 +84,10 @@ export default {
 	display: flex;
 	align-items: center;
 	gap: .5em;
+	height: 2em;
 
 	h1 {
+		margin: 0;
 		font-size: 0.8em;
 		font-weight: 500
 	}
@@ -94,19 +98,19 @@ export default {
 	}
 
 	img {
-		margin-right: 1em;
-		height: 32px;
-		width: 32px;
+		margin-left: .2em;
+		margin-right: .5em;
+		height: 2em;
+		width: 2em;
 	}
 }
 
 .embed {
-	font-size: 0.8em;
-	margin-left: calc(2em + 32px);
+	margin-left: 3em;
 	background-color: var(--bg-color-secondary);
-	padding: 1em 1.5em;
+	padding: .6em 1em;
 	border-radius: .4em;
-	border-left: .4em solid var(--discord-darker-color);
+	border-left: .4em solid var(--button-color);
 	width: max-content;
 }
 
@@ -132,4 +136,17 @@ span {
 	}
 }
 
+@media screen and (min-width: 979px) {
+	.embed {
+		margin-left: 6em;
+		display: inline-block;
+		font-size: 0.6em;
+		gap: 0;
+	}
+
+	.sender img {
+		width: 1rem;
+		margin-inline: 1em 0.5em;
+	}
+}
 </style>
