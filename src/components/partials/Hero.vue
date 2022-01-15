@@ -111,8 +111,11 @@
 		</div>
 		<div class="right">
 			<BlockCode/>
+			<img class="arrow" src="@/assets/decorations/arrow.svg" alt="...">
+
 			<div class="result">
 				<Command/>
+				<img class="arrow reverse" src="@/assets/decorations/arrow.svg" alt="...">
 				<Embed/>
 			</div>
 		</div>
@@ -222,6 +225,10 @@ ul {
 	}
 }
 
+.arrow {
+	display: none;
+}
+
 @media screen and (min-width: 980px) {
 	.hero {
 		margin-top: 20px;
@@ -230,7 +237,25 @@ ul {
 
 		.right {
 			width: 110%;
+			gap: 0;
 		}
+
+		.result {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 0;
+		}
+	}
+
+	.arrow {
+		display: flex;
+		width: 100% !important;
+		height: 40px;
+	}
+
+	.reverse {
+		transform: scaleX(-1);
 	}
 }
 </style>

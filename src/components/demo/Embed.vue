@@ -149,4 +149,11 @@ span {
 		margin-inline: 1em 0.5em;
 	}
 }
+
+@media screen and (min-width: 980px) {
+	.embed-container {
+		margin-left: 12em;
+		width: 60%;
+	}
+}
 </style>

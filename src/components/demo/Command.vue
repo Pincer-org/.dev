@@ -79,4 +79,11 @@ span.block {
 	border-radius: .25rem;
 	color: var(--text-color-secondary);
 }
+
+@media screen and (min-width: 980px) {
+	.command {
+		margin-left: 4em;
+		width: 60%;
+	}
+}
 </style>
