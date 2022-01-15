@@ -75,7 +75,7 @@ export default {
 
 .mobile-header {
 	position: relative;
-	background-color: var(--header-background-color);
+	background-color: var(--bg-color-secondary);
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -150,7 +150,7 @@ a {
 
 nav {
 	top: 80px;
-	background-color: var(--header-background-color-secondary);
+	background-color: var(--bg-color-ternary);
 	position: absolute;
 	width: 100%;
 	left: 0;

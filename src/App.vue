@@ -55,24 +55,24 @@ export default {
 	height: 10px;
 
 	&-track {
-		background: var(--main-background-color);
+		background: var(--bg-color);
 	}
 
 	&-thumb {
-		background: var(--header-background-color);
+		background: var(--bg-color-secondary);
 	}
 
 	&-corner {
-		background: var(--main-background-color);
+		background: var(--bg-color);
 	}
 }
 
 * {
 	/* Firefox scrollbar */
-	scrollbar-color: var(--button-color) var(--main-background-color);
+	scrollbar-color: var(--button-color) var(--bg-color);
 
 	&::selection {
-		background-color: var(--header-background-color);
+		background-color: var(--bg-color-secondary);
 		color: var(--text-color-secondary);
 	}
 }
@@ -83,7 +83,7 @@ body {
 	font-size: clamp(12px, 1vw, 24px);
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	background-color: var(--main-background-color);
+	background-color: var(--bg-color);
 }
 
 main {

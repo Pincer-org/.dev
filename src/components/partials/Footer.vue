@@ -14,7 +14,7 @@ export default {
 <style scoped>
 .footer {
 	display: flex;
-	background-color: var(--header-background-color);
+	background-color: var(--bg-color-secondary);
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;

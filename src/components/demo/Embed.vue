@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .embed-container {
-	background: var(--discord-lighter-color);
+	background: var(--discord-color-lighter);
 	border-radius: 6px;
 	display: grid;
 	padding: 1rem 1rem 2rem;
@@ -103,7 +103,7 @@ export default {
 .embed {
 	font-size: 0.8em;
 	margin-left: calc(2em + 32px);
-	background-color: var(--header-background-color);
+	background-color: var(--bg-color-secondary);
 	padding: 1em 1.5em;
 	border-radius: .4em;
 	border-left: .4em solid var(--discord-darker-color);
@@ -116,7 +116,7 @@ span {
 	color: var(--text-color-secondary);
 
 	&.block {
-		background: var(--discord-darker-color);
+		background: var(--discord-color-darker);
 	}
 
 	&.ping {
