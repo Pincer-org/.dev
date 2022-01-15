@@ -111,11 +111,11 @@
 		</div>
 		<div class="right">
 			<BlockCode/>
-			<img class="arrow" src="@/assets/decorations/arrow.svg" alt="...">
+			<img class="arrow arrow-left" src="@/assets/decorations/arrow.svg" alt="...">
 
 			<div class="result">
 				<Command/>
-				<img class="arrow reverse" src="@/assets/decorations/arrow.svg" alt="...">
+				<img class="arrow arrow-right" src="@/assets/decorations/arrow.svg" alt="...">
 				<Embed/>
 			</div>
 		</div>
@@ -235,6 +235,11 @@ ul {
 		display: flex;
 		gap: 64px;
 
+		.left {
+			width: 100%;
+			animation: slideInLeftFade 2s ease;
+		}
+
 		.right {
 			display: flex;
 			flex-direction: column;
@@ -254,10 +259,21 @@ ul {
 		display: flex;
 		width: 100% !important;
 		height: 40px;
-	}
 
-	.reverse {
-		transform: scaleX(-1);
+		&-left {
+			opacity: 0;
+			animation: slideInTopFade 1s ease forwards;
+			animation-delay: 1s;
+			transform: translateX(-5%) !important;
+		}
+
+		&-right {
+			padding-left: 4em;
+			transform: scaleX(-1) translateX(-5%) !important;
+			animation: slideInTopFade 1s ease forwards;
+			animation-delay: 1.5s;
+			opacity: 0;
+		}
 	}
 }
 </style>

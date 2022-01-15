@@ -82,6 +82,9 @@ span.block {
 
 @media screen and (min-width: 980px) {
 	.command {
+		animation: slideInTopFade 1s ease forwards;
+		animation-delay: 0.5s;
+		opacity: 0;
 		margin-left: 4em;
 		width: 60%;
 	}

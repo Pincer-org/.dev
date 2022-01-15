@@ -121,12 +121,24 @@ img {
 
 @keyframes slideInLeftFade {
 	0% {
-		transform: translateX(-100%);
+		transform: translateX(-10%);
 		opacity: 0;
 	}
 
 	100% {
 		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInTopFade {
+	0% {
+		transform: translateY(-5%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
 		opacity: 1;
 	}
 }

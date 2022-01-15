@@ -154,6 +154,9 @@ span {
 	.embed-container {
 		margin-left: 12em;
 		width: 60%;
+		animation: slideInTopFade 1s ease forwards;
+		animation-delay: 1s;
+		opacity: 0
 	}
 }
 </style>

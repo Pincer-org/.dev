@@ -1,5 +1,5 @@
 <template>
-	<figure :class="{'closed': closed, 'hide': hide}">
+	<figure class="code" :class="{'closed': closed, 'hide': hide}">
 		<figcaption>
 			<p>bot.py</p>
 			<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,8 @@ figure {
 }
 
 @media screen and (min-width: 980px) {
-	figure {
+	.code {
+		animation: slideInTopFade 1s ease;
 		width: min(640px, 40vw);
 	}
 
