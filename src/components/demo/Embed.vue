@@ -111,7 +111,7 @@ export default {
 }
 
 span {
-	padding: .2rem .4rem;
+	padding: .1rem .3rem;
 	border-radius: .25rem;
 	color: var(--text-color-secondary);
 
