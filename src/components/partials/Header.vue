@@ -20,7 +20,7 @@
 			<div class="left">
 				<a href="/" class="logo">
 					<div class="spin-container">
-						<img alt="logo" src="icon.svg" width="40"/>
+						<img alt="logo" src="@/assets/logo/icon.svg" width="40"/>
 					</div>
 					Pincer
 				</a>

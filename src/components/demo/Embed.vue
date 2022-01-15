@@ -5,13 +5,13 @@
 				<path d="M27.3652 1.78945L6.04371 1.78945C3.28228 1.78945 1.04371 4.02802 1.04371 6.78945V9.75293" stroke="#4F545C" stroke-width="2"/>
 			</svg>
 
-			<img src="/img/sigma.png" alt="author' profile picture">
+			<img src="@/assets/members/Sigma.png" alt="author' profile picture">
 			<p class="name">Sigmanificient</p>
 			<p class="command-used">used <span>/say</span></p>
 
 		</div>
 		<div class="sender">
-			<img src="/icon.svg" alt="Pincer logo">
+			<img src="@/assets/logo/icon.svg" alt="Pincer logo">
 			<h1>Pincer-Bot <span class="badge">bot</span></h1>
 			<p>Today at 12:00 PM</p>
 		</div>

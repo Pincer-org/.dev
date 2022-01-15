@@ -8,42 +8,42 @@
 		</p>
 		<div class="team">
 			<figure class="member">
-				<img src="img/sigma.png" alt="sigma"/>
+				<img src="@/assets/members/Sigma.png" alt="sigma"/>
 				<figcaption>
 					<a href="https://github.com/Sigmanificient">Sigmanificient,</a>
 					<p>Founder</p>
 				</figcaption>
 			</figure>
 			<figure class="member">
-				<img src="img/arthurdw.png" alt="arthurdw"/>
+				<img src="@/assets/members/Arthurdw.png" alt="arthurdw"/>
 				<figcaption>
 					<a href="https://github.com/Arthurdw">Arthurdw,</a>
 					<p>Co-Founder</p>
 				</figcaption>
 			</figure>
 			<figure class="member">
-				<img src="img/lunarmagpie.png" alt="lunarmagpie"/>
+				<img src="@/assets/members/Lunarmagpie.png" alt="lunarmagpie"/>
 				<figcaption>
 					<a href="https://github.com/Lunarmagpie">Lunarmagpie,</a>
 					<p>Main Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="member">
-				<img src="img/endercheif.png" alt="endercheif"/>
+				<img src="@/assets/members/Endercheif.png" alt="endercheif"/>
 				<figcaption>
 					<a href="https://github.com/Endercheif">Endercheif,</a>
 					<p>Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="member">
-				<img src="img/trag1c.png" alt="trag1c"/>
+				<img src="@/assets/members/Trag1c.png" alt="trag1c"/>
 				<figcaption>
 					<a href="https://github.com/trag1c">trag1c,</a>
 					<p>Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="member">
-				<img src="img/other.png" alt="someone else"/>
+				<img src="@/assets/members/_other.png" alt="someone else"/>
 				<figcaption>
 					<a href="https://github.com">Maybe You?,</a>
 					<p>Future Maintainer</p>
