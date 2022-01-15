@@ -33,7 +33,25 @@ export default {
 </script>
 
 <style lang="scss">
-// give member their scrollbar scss style
+:root {
+	scroll-behavior: smooth;
+	--text-color: #FFFFFF;
+	--text-color-secondary: #DCDDEA;
+
+	--bg-color: #222635;
+	--bg-color-secondary: #2B3448;
+	--bg-color-ternary: #303A4F;
+
+	--discord-color-darker: #191C2B;
+	--discord-color-lighter: #363D4E;
+
+	--discord-ping-color: #3B406F;
+	--discord-badge-color: #5865F2;
+
+	--button-color: #1475C3;
+	--button-shadow-color: #0d5894;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
@@ -51,17 +69,22 @@ export default {
 	}
 }
 
-/* Firefox */
 * {
+	/* Firefox scrollbar */
 	scrollbar-color: var(--button-color) var(--main-background-color);
-}
 
-*::selection {
-	background-color: var(--header-background-color);
-	color: var(--text-color-secondary);
+	&::selection {
+		background-color: var(--header-background-color);
+		color: var(--text-color-secondary);
+	}
 }
 
 body {
+	margin: 0;
+	color: var(--text-color);
+	font-size: clamp(12px, 1vw, 24px);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 	background-color: var(--main-background-color);
 }
 
@@ -71,5 +94,42 @@ main {
 	width: clamp(280px, calc(100% - 40px), 1400px);
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	user-select: none;
+}
+
+@keyframes windowClose {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		transform: scaleY(1);
+	}
+
+	100% {
+		transform-origin: top right;
+		transform: scaleY(0);
+		opacity: 0;
+	}
+}
+
+@keyframes slideInLeftFade {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 </style>
