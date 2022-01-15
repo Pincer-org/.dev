@@ -26,15 +26,15 @@ export default {
 
 <style lang="scss" scoped>
 .command {
-	font-size: .75em;
+	font-size: .5em;
 }
 
 .up, .down {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 1rem;
-	gap: 1rem;
+	padding: 0.75rem 0.75rem 0.75rem 1rem;
+	gap: 0.75rem;
 
 	h1, p {
 		font-size: 1.25em;
@@ -64,6 +64,12 @@ export default {
 	background-color: var(--discord-color-lighter);
 	border-bottom-left-radius: .5em;
 	border-bottom-right-radius: .5em;
+	padding-left: 3em;
+	gap: 1rem;
+
+	svg {
+		width: 2em;
+	}
 }
 
 span.block {
