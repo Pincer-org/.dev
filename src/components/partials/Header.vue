@@ -1,39 +1,41 @@
 <template>
 	<header>
-		<nav :class="{ 'open' : menuOpen }">
-			<ul>
-				<li>
-					<a href="https://discord/pincer">Discord</a>
-				</li>
-				<li>
-					<a href="https://pypi.org/project/Pincer">PyPI</a>
-				</li>
-				<li>
-					<a href="https://docs.pincer.dev">Documentation</a>
-				</li>
-				<li>
-					<a href="https://github.com/pincer-org/pincer">GitHub</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="mobile-header">
-			<div class="left">
-				<a href="/" class="logo">
-					<div class="spin-container">
-						<img alt="logo" src="@/assets/logo/icon.svg" width="40"/>
-					</div>
-					Pincer
+		<div class="container">
+			<nav :class="{ 'open' : menuOpen }">
+				<ul>
+					<li>
+						<a href="https://discord/pincer">Discord</a>
+					</li>
+					<li>
+						<a href="https://pypi.org/project/Pincer">PyPI</a>
+					</li>
+					<li>
+						<a href="https://docs.pincer.dev">Documentation</a>
+					</li>
+					<li>
+						<a href="https://github.com/pincer-org/pincer">GitHub</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="mobile-header">
+				<div class="left">
+					<a href="/" class="logo">
+						<div class="spin-container">
+							<img alt="logo" src="@/assets/logo/icon.svg" width="32"/>
+						</div>
+						Pincer
+					</a>
+				</div>
+				<a id="hamburger" class="hamburger" @click="toggleMenu()" :class="{ 'rotated' : menuOpen }">
+					<svg width="24" height="24" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g fill="black">
+							<path d="M0 0H32V3H0V0Z"/>
+							<path d="M0 12H32V15H0V12Z"/>
+							<path d="M0 24H32V27H0V24Z"/>
+						</g>
+					</svg>
 				</a>
 			</div>
-			<a id="hamburger" class="hamburger" @click="toggleMenu()" :class="{ 'rotated' : menuOpen }">
-				<svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g fill="black">
-						<path d="M0 0H32V3H0V0Z"/>
-						<path d="M0 12H32V15H0V12Z"/>
-						<path d="M0 24H32V27H0V24Z"/>
-					</g>
-				</svg>
-			</a>
 		</div>
 	</header>
 </template>
@@ -54,6 +56,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$header-height: 64px;
+
 @keyframes spinFade {
 	0% {
 		opacity: 0;
@@ -76,7 +80,7 @@ export default {
 .mobile-header {
 	position: relative;
 	background-color: var(--bg-color-secondary);
-	height: 80px;
+	height: $header-height;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -92,6 +96,7 @@ a {
 	&.logo {
 		display: flex;
 		align-items: center;
+		font-size: 18px;
 		gap: 20px;
 
 		&:hover img, &:focus img {
@@ -99,7 +104,6 @@ a {
 		}
 
 		&:focus {
-			text-decoration: underline;
 			outline: none;
 		}
 	}
@@ -149,7 +153,7 @@ a {
 }
 
 nav {
-	top: 80px;
+	top: $header-height;
 	background-color: var(--bg-color-ternary);
 	position: absolute;
 	width: 100%;
@@ -166,15 +170,19 @@ nav {
 		margin: 40px 0;
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
 		justify-content: center;
+		gap: 20px;
 	}
 
 	li {
 		list-style: none;
-		position: relative;
 
-		&::after {
+		a {
+			font-size: 1em;
+			position: relative;
+		}
+
+		a::after {
 			content: '';
 			position: absolute;
 			bottom: 0;
@@ -185,12 +193,52 @@ nav {
 			height: 2px;
 		}
 
-		&:hover, a:focus {
+		a:hover, a:focus {
 			outline: none;
 			color: var(--text-color-secondary);
 
 			&::after {
-				width: 10%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	#hamburger {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		background: var(--bg-color-secondary);
+		justify-content: center;
+	}
+
+	.container {
+		display: flex;
+		width: min(90%, 1680px);
+		flex-direction: row-reverse;
+	}
+
+	nav {
+		background: var(--bg-color-secondary);
+		transform: translateY(0);
+		position: unset;
+		display: flex;
+		align-items: center;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			gap: 4em;
+
+			li:hover:after {
+				width: 50%;
 			}
 		}
 	}
