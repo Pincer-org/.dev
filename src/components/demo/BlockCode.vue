@@ -119,7 +119,8 @@ figure {
 
 	code {
 		font-family: "Fira Code", monospace;
-		font-size: .8em;
+		font-size: .6em;
+		line-height: 1.2em;
 		white-space: pre;
 		color: #B3BDDF;
 	}
