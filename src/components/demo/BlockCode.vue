@@ -90,9 +90,9 @@ export default {
 
 <style lang="scss" scoped>
 figure {
-	margin: 0;
 	padding: 0;
-	width: min(640px, calc(100vw - 40px));
+	width: calc(100vw - 40px);
+	margin: 2em 0 0;
 
 	figcaption {
 		display: flex;
@@ -106,6 +106,7 @@ figure {
 
 		p {
 			margin: 0;
+			font-size: .6em;
 		}
 	}
 
@@ -115,13 +116,12 @@ figure {
 		background: #363D4E;
 		border-bottom-left-radius: .5em;
 		border-bottom-right-radius: .5em;
+		line-height: .75em;
 	}
 
 	code {
 		font-family: "Fira Code", monospace;
-		font-size: .6em;
-		line-height: 1.2em;
-		white-space: pre;
+		font-size: .55em;
 		color: #B3BDDF;
 	}
 
@@ -145,6 +145,18 @@ figure {
 @media (max-width: 580px) {
 	pre {
 		overflow-x: scroll;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 979px) {
+	figure {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	figure {
+		width: min(640px, 40vw);
 	}
 }
 </style>
