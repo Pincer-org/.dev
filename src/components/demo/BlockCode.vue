@@ -8,8 +8,7 @@
 				<ellipse cx="4.00001" cy="4" rx="4.00001" ry="4" fill="#8ECF4E"/>
 			</svg>
 		</figcaption>
-		<pre>
-      <code>
+		<pre><code>
 <T c="p">from</T> pincer <T c="p">import</T> Client, command
 <T c="p">from</T> pincer.objects <T c="p">import</T> MessageContext, Embed
 
@@ -30,8 +29,8 @@
 <T c="p">if</T> __name__ <T c="p">==</T> <T c="g">"__main__"</T>:
   bot = <T c="b">Bot</T>(<T c="k">token</T><T c="p">=</T><T c="g">"<span id="token">super.secret.token</span>"</T>)
   bot.<T c="b">run</T>()
-      </code>
-    </pre>
+
+</code></pre>
 	</figure>
 </template>
 
@@ -52,6 +51,10 @@ const getToken = () => {
 
 
 window.onload = () => {
+	if (window.innerWidth < 580) {
+		return
+	}
+
 	const token = document.getElementById("token");
 
 	setInterval(() => {
@@ -110,12 +113,13 @@ figure {
 		margin: 0;
 		padding: 0 20px;
 		background: #363D4E;
-		overflow-x: scroll;
 		border-bottom-left-radius: .5em;
 		border-bottom-right-radius: .5em;
 	}
 
 	code {
+		font-family: "Fira Code", monospace;
+		font-size: .8em;
 		white-space: pre;
 		color: #B3BDDF;
 	}
@@ -134,6 +138,12 @@ figure {
 		&::after {
 			content: "Ooops...";
 		}
+	}
+}
+
+@media (max-width: 580px) {
+	pre {
+		overflow-x: scroll;
 	}
 }
 </style>
