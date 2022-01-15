@@ -1,5 +1,5 @@
 <template>
-	<div class="about">
+	<div id="more" class="about">
 		<h2>Pincer, the discord lib from scratch.</h2>
 		<p>
 			After the announcement of discord.py dropping maintenance, we took the decision to build a new API wrapper, built

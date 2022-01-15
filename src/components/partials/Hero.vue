@@ -80,7 +80,7 @@
 					🚀 The snappy asynchronous discord api wrapper API wrapper written with aiohttp & websockets for anyone in the
 					Python community to build their bot with.
 				</p>
-				<BlueButton text="Learn more" link="/a"/>
+				<BlueButton text="Learn more" @click="scrollDown()"/>
 
 			</div>
 
@@ -137,6 +137,12 @@ export default {
 		BlockCode,
 		Command,
 		Embed
+	},
+	methods: {
+		scrollDown() {
+			// scroll to anchor #more
+			location.hash = '#more';
+		}
 	}
 }
 </script>
