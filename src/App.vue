@@ -1,14 +1,12 @@
 <template>
-	<div id="app">
-		<Header/>
-		<main>
-			<Hero/>
-			<Pincer/>
-			<Team/>
-			<Related/>
-		</main>
-		<Footer/>
-	</div>
+	<Header/>
+	<main>
+		<Hero/>
+		<Pincer/>
+		<Team/>
+		<Related/>
+	</main>
+	<Footer/>
 </template>
 
 <script>
