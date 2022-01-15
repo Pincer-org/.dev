@@ -1,14 +1,3 @@
-<script>
-import BlueButton from '../components/buttons/BlueButton.vue'
-
-export default {
-		name: 'Team',
-		components: {
-				BlueButton
-		}
-}
-
-</script>
 <template>
 	<div>
 		<h2>Meet our core team</h2>
@@ -64,39 +53,52 @@ export default {
 		<BlueButton text="Apply to join" link="mailto:contact@Pincer.dev"/>
 	</div>
 </template>
+
+<script>
+import BlueButton from '../components/buttons/BlueButton.vue'
+
+export default {
+	name: 'Team',
+	components: {
+		BlueButton
+	}
+}
+
+</script>
+
 <style lang="scss" scoped>
 h2 {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 
 .team {
-  font-size: 0.6rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 20px;
+	font-size: 0.6rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 20px;
 
-  a:focus, a:hover {
-    text-decoration: underline;
-    outline: none;
-  }
+	a:focus, a:hover {
+		text-decoration: underline;
+		outline: none;
+	}
 }
 
 .member {
-  display: flex;
-  justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 
-  gap: 10px;
-  margin: 0;
+	gap: 10px;
+	margin: 0;
 
-  p {
-    margin: 0;
-    text-align: justify;
-  }
+	p {
+		margin: 0;
+		text-align: justify;
+	}
 
-  img {
-    width: 24px;
-    height: 24px;
-  }
+	img {
+		width: 24px;
+		height: 24px;
+	}
 }
 </style>
