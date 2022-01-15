@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import BlueButton from '../buttons/BlueButton.vue'
+import BlueButton from '../buttons/Btn.vue'
 
 export default {
 	name: 'Team',

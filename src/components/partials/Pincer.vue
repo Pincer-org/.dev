@@ -43,7 +43,7 @@
 
 <script>
 
-import BlueButton from "@/components/buttons/BlueButton";
+import BlueButton from "@/components/buttons/Btn";
 
 export default {
 	name: 'Pincer',

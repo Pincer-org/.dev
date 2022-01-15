@@ -114,8 +114,8 @@
 </template>
 
 <script>
-import BlueButton from '../buttons/BlueButton.vue'
-import GhButton from '../buttons/GhButton.vue'
+import BlueButton from '../buttons/Btn.vue'
+import GhButton from '../buttons/Badge.vue'
 
 import BlockCode from '../demo/BlockCode.vue'
 import Command from "../demo/Command.vue";
