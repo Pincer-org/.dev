@@ -2,23 +2,25 @@
 	<div class="related">
 		<h2>Related projects</h2>
 
-		<div class="left">
-			<h3>The Pincer CLI</h3>
-			<p>
-				In the intent to simplify pincer user life, we are building a console line interface tools that will bring
-				automation to the pincer package. Commands to import templates, create cogs and commands are going to make the
-				developer experience easier and straight forward, faster and open to beginners.
-			</p>
-			<BlueButton text="Github Repository" link="https://github.com/Pincer-org/cli"/>
-		</div>
-		<div class="right">
-			<h3>The Pincer Bot</h3>
-			<p>
-				Our discord server need a powerful yet fun bot to interact with and demonstrate the key features of our library.
-				It will also be a good example for an advanced Bot, running in production, that new users can explore to
-				understand how they can use the library and take advantage of it.
-			</p>
-			<BlueButton text="Github Repository" link="https://github.com/Pincer-org/bot"/>
+		<div class="container">
+			<div class="left">
+				<h3>The Pincer CLI</h3>
+				<p>
+					In the intent to simplify pincer user life, we are building a console line interface tools that will bring
+					automation to the pincer package. Commands to import templates, create cogs and commands are going to make the
+					developer experience easier and straight forward, faster and open to beginners.
+				</p>
+				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/cli"/>
+			</div>
+			<div class="right">
+				<h3>The Pincer Bot</h3>
+				<p>
+					Our discord server need a powerful yet fun bot to interact with and demonstrate the key features of our
+					library. It will also be a good example for an advanced Bot, running in production, that new users can explore
+					to understand how they can use the library and take advantage of it.
+				</p>
+				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/bot"/>
+			</div>
 		</div>
 	</div>
 </template>
@@ -35,11 +37,68 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2, .right {
+.related {
+	margin-bottom: 4em;
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	p {
+		text-align: justify;
+	}
+}
+
+.right {
 	margin: 40px 0;
 }
 
-p {
-	text-align: justify;
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+@media (min-width: 540px) {
+	.container {
+		flex-direction: row;
+	}
+}
+
+.left {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+
+		background: url('../../assets/decorations/cli.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+		opacity: 0.2;
+	}
+}
+
+.right {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+
+		background: url('../../assets/decorations/robot.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+		opacity: 0.2;
+	}
 }
 </style>

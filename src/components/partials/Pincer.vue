@@ -64,4 +64,40 @@ p {
 	flex-direction: column;
 	gap: 40px;
 }
+
+.left {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+
+		background: url('../../assets/decorations/pull_request.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+		opacity: 0.2;
+	}
+}
+
+.right {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+
+		background: url('../../assets/decorations/magnifying-glass.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+		opacity: 0.2;
+	}
+}
+
+@media (min-width: 540px) {
+	.details {
+		flex-direction: row;
+	}
+}
 </style>

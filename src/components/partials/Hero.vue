@@ -205,6 +205,20 @@ ul {
 	gap: 40px;
 }
 
+.explore {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		opacity: 0.2;
+		background: url('../../assets/decorations/help.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+	}
+}
+
 @media screen and (min-width: 720px) and (max-width: 979px) {
 	.left {
 		ul {
@@ -276,4 +290,5 @@ ul {
 		}
 	}
 }
+
 </style>

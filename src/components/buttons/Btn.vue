@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
+	font-size: 0.8em;
 	color: #fff;
 	display: inline-block;
 	background: var(--button-color);

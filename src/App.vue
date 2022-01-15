@@ -88,7 +88,7 @@ body {
 
 main {
 	display: grid;
-	gap: 2em;
+	gap: 4em;
 	width: min(calc(100% - 40px), 1400px);
 	padding: 0 20px;
 	margin: 0 auto;
