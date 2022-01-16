@@ -8,7 +8,7 @@
 				<ellipse cx="4" cy="4" rx="4" ry="4" fill="#8ECF4E"/>
 			</svg>
 		</figcaption>
-		<pre class="windows-container"><code id="bot-code">
+		<pre class="window-container"><code id="bot-code">
 <T c="p">from</T> pincer <T c="p">import</T> Client, command
 <T c="p">from</T> pincer.objects <T c="p">import</T> MessageContext, Embed
 
@@ -134,14 +134,14 @@ export default {
 	}
 }
 
-.bot-code {
+#bot-code {
 	font-family: "Fira Code", monospace;
 	font-size: .55em;
 	color: #B3BDDF;
 }
 
 @media (max-width: 580px) {
-	.windows-container {
+	.window-container {
 		overflow-x: scroll;
 	}
 }

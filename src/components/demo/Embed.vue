@@ -7,17 +7,17 @@
 
 			<img src="@/assets/members/Sigma.png" alt="author' profile picture">
 			<p class="name">Sigmanificient</p>
-			<p class="command-used">used <span>/say</span></p>
+			<p class="command-used">used <span class="block">/say</span></p>
 
 		</div>
 		<div class="sender">
 			<img src="@/assets/logo/icon.svg" alt="Pincer logo">
-			<h1>Pincer-Bot <span class="badge">bot</span></h1>
+			<h1>Pincer-Bot <span class="block badge">bot</span></h1>
 			<p>Today at 12:00 PM</p>
 		</div>
 		<div class="embed">
-			<p><span class="ping">@Sigmanificient</span> said:</p>
-			<p><span class="block">Hello, World!</span></p>
+			<p><span class="block ping">@Sigmanificient</span> said:</p>
+			<p><span class="block block-code">Hello, World!</span></p>
 		</div>
 	</div>
 </template>
@@ -43,11 +43,6 @@ export default {
 	align-items: center;
 	gap: .5em;
 
-	h1 {
-		font-size: .5rem;
-		font-weight: 500;
-	}
-
 	svg {
 		margin-top: .25rem;
 		margin-bottom: .2rem;
@@ -63,20 +58,20 @@ export default {
 		font-size: .75em;
 		margin: 0;
 	}
+}
 
-	.name {
-		font-size: .75em;
+.name {
+	font-size: .75em;
+	font-weight: bold;
+}
+
+.command-used {
+	color: var(--text-color-secondary);
+
+	span {
+		padding: 0;
 		font-weight: bold;
-	}
-
-	.command-used {
-		color: var(--text-color-secondary);
-
-		span {
-			padding: 0;
-			font-weight: bold;
-			color: var(--button-color);
-		}
+		color: var(--button-color);
 	}
 }
 
@@ -114,12 +109,12 @@ export default {
 	width: max-content;
 }
 
-span {
+.block {
 	padding: .1rem .3rem;
 	border-radius: .25rem;
 	color: var(--text-color-secondary);
 
-	&.block {
+	&-code {
 		background: var(--discord-color-darker);
 	}
 
