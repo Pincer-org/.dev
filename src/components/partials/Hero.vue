@@ -1,6 +1,6 @@
 <template>
 	<div class="hero">
-		<div class="left">
+		<div class="hero-left">
 			<div class="landing">
 				<h1>Welcome to Pincer!</h1>
 				<div class="github-buttons">
@@ -109,7 +109,7 @@
 				</nav>
 			</div>
 		</div>
-		<div class="right">
+		<div class="hero-right">
 			<BlockCode/>
 			<img class="arrow arrow-left" src="@/assets/decorations/arrow.svg" alt="...">
 
@@ -147,7 +147,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.left {
+.hero-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -214,7 +214,7 @@ export default {
 }
 
 
-.right {
+.hero-right {
 	display: grid;
 	gap: 40px;
 
@@ -233,7 +233,7 @@ export default {
 }
 
 @media screen and (min-width: 720px) and (max-width: 979px) {
-	.left {
+	.hero-left {
 		gap: 40px;
 	}
 
@@ -248,7 +248,7 @@ export default {
 		}
 	}
 
-	.right {
+	.hero-right {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
@@ -259,18 +259,18 @@ export default {
 		margin-top: 20px;
 		display: flex;
 		gap: 64px;
-	}
 
-	.left {
-		width: 100%;
-		animation: slideInLeftFade 2s ease;
-	}
+		&-left {
+			width: 100%;
+			animation: slideInLeftFade 2s ease;
+		}
 
-	.right {
-		display: flex;
-		flex-direction: column;
-		width: 110%;
-		gap: 0;
+		&-right {
+			display: flex;
+			flex-direction: column;
+			width: 110%;
+			gap: 0;
+		}
 	}
 
 	.result {
@@ -284,6 +284,7 @@ export default {
 		display: flex;
 		width: 100% !important;
 		height: 40px;
+		overflow: hidden;
 
 		&-left {
 			opacity: 0;
@@ -292,7 +293,6 @@ export default {
 		}
 
 		&-right {
-			padding-left: 4em;
 			animation: slideInTopFadeInv 1s ease forwards;
 			animation-delay: 1.5s;
 			opacity: 0;
