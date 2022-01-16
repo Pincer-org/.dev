@@ -36,21 +36,10 @@ export default {
 	padding: 0.75rem 0.75rem 0.75rem 1rem;
 	gap: 0.75rem;
 
-	h1, p {
+	p {
 		font-size: 1.25em;
 		font-weight: 500;
 		margin: 0;
-	}
-
-	h1 {
-		display: flex;
-		align-items: center;
-		margin-bottom: 4px;
-		gap: 4px
-	}
-
-	img {
-		height: 1.5rem;
 	}
 }
 
@@ -58,6 +47,19 @@ export default {
 	background-color: var(--bg-color-secondary);
 	border-top-left-radius: .5em;
 	border-top-right-radius: .5em;
+
+	h1 {
+		font-size: 1.25em;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		margin: 0 0 4px;
+		gap: 4px
+	}
+
+	img {
+		height: 1.5rem;
+	}
 }
 
 .down {
@@ -72,7 +74,7 @@ export default {
 	}
 }
 
-span.block {
+.block {
 	font-size: .75em;
 	background: var(--discord-color-darker);
 	padding: .2rem .4rem;
