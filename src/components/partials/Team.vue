@@ -67,10 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2 {
-	margin-top: 40px;
-}
-
 .team {
 	font-size: 0.6rem;
 	display: grid;
@@ -82,6 +78,10 @@ h2 {
 
 	&-container {
 		position: relative;
+
+		h2 {
+			margin-top: 40px;
+		}
 
 		&::before {
 			content: '';
