@@ -4,72 +4,72 @@
 			<div class="landing">
 				<h1>Welcome to Pincer!</h1>
 				<div class="github-buttons">
-					<GhButton
+					<Badge
 							href="https://pypi.org/project/Pincer"
 							badge-url="https://img.shields.io/badge/dynamic/json?label=downloads&query=%24.total_downloads&url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fprojects%2FPincer"
 							alt="PyPI - Downloads"
 					/>
-					<GhButton
+					<Badge
 							href="https://pypi.org/project/Pincer"
 							badge-url="https://img.shields.io/pypi/v/Pincer"
 							alt="PyPI"
 					/>
-					<GhButton
+					<Badge
 							href="https://pypi.org/project/Pincer"
 							badge-url="https://img.shields.io/pypi/pyversions/Pincer"
 							alt="PyPI - Python Version"
 					/>
-					<GhButton
+					<Badge
 							href="https://scrutinizer-ci.com/g/Pincer-org/pincer/?branch=main"
 							badge-url="https://scrutinizer-ci.com/g/Pincer-org/pincer/badges/quality-score.png?b=main"
 							alt="Scrutinizer Code Quality"
 					/>
-					<GhButton
+					<Badge
 							href="https://scrutinizer-ci.com/g/Pincer-org/Pincer/build-status/main"
 							badge-url="https://scrutinizer-ci.com/g/Pincer-org/Pincer/badges/build.png?b=main"
 							alt="Build Status"
 					/>
-					<GhButton
+					<Badge
 							href="https://pincer.readthedocs.io/en/latest/?badge=latest"
 							badge-url="https://readthedocs.org/projects/pincer/badge/?version=latest"
 							alt="Documentation Status"
 					/>
-					<GhButton
+					<Badge
 							href="https://codecov.io/gh/Pincer-org/Pincer"
 							badge-url="https://codecov.io/gh/Pincer-org/Pincer/branch/main/graph/badge.svg?token=T15T34KOQW"
 							alt="codecov"
 					/>
-					<GhButton
+					<Badge
 							href="/"
 							badge-url="https://tokei.rs/b1/github/pincer-org/pincer?category=code&path=pincer"
 							alt="Lines of code"
 					/>
-					<GhButton
+					<Badge
 							href="/"
 							badge-url="https://img.shields.io/github/repo-size/Pincer-org/Pincer"
 							alt="Repo Size"
 					/>
-					<GhButton
+					<Badge
 							href="/"
 							badge-url="https://img.shields.io/github/last-commit/Pincer-org/Pincer"
 							alt="GitHub last commit"
 					/>
-					<GhButton
+					<Badge
 							href="/"
 							badge-url="https://img.shields.io/github/commit-activity/m/Pincer-org/Pincer?label=commits"
 							alt="GitHub commit activity"
 					/>
-					<GhButton
+					<Badge
 							href="/"
 							badge-url="https://img.shields.io/github/license/Pincer-org/Pince"
 							alt="GitHub"
 					/>
-					<GhButton
+					<Badge
 							href="https://discord.gg/pince"
 							badge-url="https://img.shields.io/discord/881531065859190804"
 							alt="Discord"
 					/>
-					<GhButton
+					<Badge
 							href="https://github.com/psf/black"
 							badge-url="https://img.shields.io/badge/code%20style-black-000000.svg"
 							alt="Code style: black"
@@ -80,7 +80,7 @@
 					🚀 The snappy asynchronous discord api wrapper API wrapper written with aiohttp & websockets for anyone in the
 					Python community to build their bot with.
 				</p>
-				<BlueButton text="Learn more" @click="scrollDown()"/>
+				<Btn text="Learn more" @click="scrollDown()"/>
 
 			</div>
 
@@ -88,20 +88,20 @@
 				<h2>Want to explore Pincer?</h2>
 
 				<nav>
-					<ul>
-						<li>
+					<ul class="explore-container">
+						<li class="explore-item">
 							<img src="@/assets/icons/github.svg" alt="Github"/>
 							<a href="https://github.com/pincer-org/pincer">Take o look at the GitHub repository</a>
 						</li>
-						<li>
+						<li class="explore-item">
 							<img src="@/assets/icons/discord.svg" alt="Discord"/>
 							<a href="https://discord/pincer">Join our Discord community</a>
 						</li>
-						<li>
+						<li class="explore-item">
 							<img src="@/assets/icons/pypi.svg" alt="PyPI">
 							<a href="https://pypi.org/project/Pincer">Download the PyPI package</a>
 						</li>
-						<li>
+						<li class="explore-item">
 							<img src="@/assets/icons/read_the_docs.svg" alt="ReadTheDocs">
 							<a href="https://docs.pincer.dev">Get Started with the documentation</a>
 						</li>
@@ -123,8 +123,8 @@
 </template>
 
 <script>
-import BlueButton from '../buttons/Btn.vue'
-import GhButton from '../buttons/Badge.vue'
+import Btn from '../buttons/Btn.vue'
+import Badge from '../buttons/Badge.vue'
 
 import BlockCode from '../demo/BlockCode.vue'
 import Command from "../demo/Command.vue";
@@ -132,15 +132,14 @@ import Embed from "../demo/Embed.vue";
 
 export default {
 	components: {
-		BlueButton,
-		GhButton,
+		Btn,
+		Badge,
 		BlockCode,
 		Command,
 		Embed
 	},
 	methods: {
 		scrollDown() {
-			// scroll to anchor #more
 			location.hash = '#more';
 		}
 	}
@@ -148,16 +147,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-	font-size: 2rem;
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-h2, p {
-	margin-top: 2rem;
-}
+.landing {
+	h1 {
+		font-size: 2rem;
+	}
 
-p {
-	text-align: justify;
+	p {
+		margin-top: 2rem;
+		text-align: justify;
+	}
 }
 
 .github-buttons {
@@ -166,8 +170,20 @@ p {
 	gap: 10px;
 }
 
-ul {
-	li {
+.explore {
+	position: relative;
+
+	h2 {
+		margin-top: 2rem;
+	}
+
+	&-container {
+		padding-left: 0;
+		display: grid;
+		gap: 5px;
+	}
+
+	&-item {
 		img {
 			width: 24px;
 			height: 24px;
@@ -186,16 +202,17 @@ ul {
 		}
 	}
 
-	padding-left: 0;
-	display: grid;
-	gap: 5px;
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		opacity: 0.2;
+		background: url('../../assets/decorations/help.svg') no-repeat center;
+		background-size: 75% 75%;
+		z-index: -1;
+	}
 }
 
-.left {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
 
 .right {
 	display: grid;
@@ -211,32 +228,24 @@ ul {
 	gap: 40px;
 }
 
-.explore {
-	position: relative;
-
-	&::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		opacity: 0.2;
-		background: url('../../assets/decorations/help.svg') no-repeat center;
-		background-size: 75% 75%;
-		z-index: -1;
-	}
+.arrow {
+	display: none;
 }
 
 @media screen and (min-width: 720px) and (max-width: 979px) {
 	.left {
-		ul {
-			display: flex;
-			gap: 20px;
-		}
-
 		gap: 40px;
 	}
 
 	.explore {
 		min-width: 300px;
+
+		&-container {
+			ul {
+				display: flex;
+				gap: 20px;
+			}
+		}
 	}
 
 	.right {
@@ -245,34 +254,30 @@ ul {
 	}
 }
 
-.arrow {
-	display: none;
-}
-
 @media screen and (min-width: 980px) {
 	.hero {
 		margin-top: 20px;
 		display: flex;
 		gap: 64px;
+	}
 
-		.left {
-			width: 100%;
-			animation: slideInLeftFade 2s ease;
-		}
+	.left {
+		width: 100%;
+		animation: slideInLeftFade 2s ease;
+	}
 
-		.right {
-			display: flex;
-			flex-direction: column;
-			width: 110%;
-			gap: 0;
-		}
+	.right {
+		display: flex;
+		flex-direction: column;
+		width: 110%;
+		gap: 0;
+	}
 
-		.result {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			gap: 0;
-		}
+	.result {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 0;
 	}
 
 	.arrow {
