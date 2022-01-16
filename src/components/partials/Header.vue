@@ -77,6 +77,69 @@ $header-height: 64px;
 	}
 }
 
+#hamburger {
+	cursor: pointer;
+
+	svg g {
+		transition: all 0.3s ease;
+		fill: var(--text-color);
+
+		path {
+			transition: all 0.3s ease;
+
+			&:nth-child(3) {
+				transform-origin: bottom left;
+			}
+		}
+	}
+
+	&.rotated {
+		svg g {
+			transform: translateX(3px);
+
+			path {
+				&:nth-child(1) {
+					transform: rotate(45deg);
+				}
+
+				&:nth-child(2) {
+					transform: scaleX(0)
+				}
+
+				&:nth-child(3) {
+					transform: rotate(-45deg) translateY(-1.5px) translateX(0.5px);
+				}
+			}
+		}
+	}
+
+	transition: 0.3s ease-in-out;
+	display: flex;
+}
+
+.header-container {
+	a {
+		user-select: none;
+		font-weight: 500;
+		font-size: 1.5rem;
+
+		&.logo {
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+			gap: 20px;
+
+			&:hover img, &:focus img {
+				animation: Giggle 1s cubic-bezier(.35, -0.21, .04, 1.52) infinite;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
 .header-mobile {
 	position: relative;
 	background-color: var(--bg-color-secondary);
@@ -90,66 +153,6 @@ $header-height: 64px;
 .spin-container {
 	animation: spinFade 1s cubic-bezier(.35, -0.21, .04, 1.52);
 	display: flex;
-}
-
-a {
-	&.logo {
-		display: flex;
-		align-items: center;
-		font-size: 18px;
-		gap: 20px;
-
-		&:hover img, &:focus img {
-			animation: Giggle 1s cubic-bezier(.35, -0.21, .04, 1.52) infinite;
-		}
-
-		&:focus {
-			outline: none;
-		}
-	}
-
-	&.hamburger {
-		cursor: pointer;
-
-		svg g {
-			transition: all 0.3s ease;
-			fill: var(--text-color);
-
-			path {
-				transition: all 0.3s ease;
-
-				&:nth-child(3) {
-					transform-origin: bottom left;
-				}
-			}
-		}
-
-		&.rotated {
-			svg g {
-				transform: translateX(3px);
-
-				path {
-					&:nth-child(1) {
-						transform: rotate(45deg);
-					}
-
-					&:nth-child(2) {
-						transform: scaleX(0)
-					}
-
-					&:nth-child(3) {
-						transform: rotate(-45deg) translateY(-1.5px) translateX(0.5px);
-					}
-				}
-			}
-		}
-
-		transition: 0.3s ease-in-out;
-		display: flex;
-	}
-
-	font-weight: 500;
-	font-size: 1.5rem;
 }
 
 .header-nav {
