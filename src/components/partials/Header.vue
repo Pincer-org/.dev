@@ -1,7 +1,7 @@
 <template>
-	<header>
-		<div class="container">
-			<nav :class="{ 'open' : menuOpen }">
+	<header class="header">
+		<div class="header-container">
+			<nav class="header-nav" :class="{ 'open' : menuOpen }">
 				<ul>
 					<li>
 						<a href="https://discord/pincer">Discord</a>
@@ -17,7 +17,7 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="mobile-header">
+			<div class="header-mobile">
 				<div class="left">
 					<a href="/" class="logo">
 						<div class="spin-container">
@@ -77,7 +77,7 @@ $header-height: 64px;
 	}
 }
 
-.mobile-header {
+.header-mobile {
 	position: relative;
 	background-color: var(--bg-color-secondary);
 	height: $header-height;
@@ -152,7 +152,7 @@ a {
 	font-size: 1.5rem;
 }
 
-nav {
+.header-nav {
 	top: $header-height;
 	background-color: var(--bg-color-ternary);
 	position: absolute;
@@ -209,36 +209,36 @@ nav {
 		display: none;
 	}
 
-	header {
+	.header {
 		display: flex;
 		background: var(--bg-color-secondary);
 		justify-content: center;
-	}
 
-	.container {
-		display: flex;
-		width: min(90%, 1680px);
-		flex-direction: row-reverse;
-	}
+		&-container {
+			display: flex;
+			width: min(90%, 1680px);
+			flex-direction: row-reverse;
+		}
 
-	nav {
-		background: var(--bg-color-secondary);
-		transform: translateY(0);
-		position: unset;
-		display: flex;
-		align-items: center;
-
-		ul {
-			margin: 0;
-			padding: 0;
-			flex-direction: row;
-			justify-content: flex-end;
+		&-nav {
+			background: var(--bg-color-secondary);
+			transform: translateY(0);
+			position: unset;
+			display: flex;
 			align-items: center;
-			width: 100%;
-			gap: 4em;
 
-			li:hover:after {
-				width: 50%;
+			ul {
+				margin: 0;
+				padding: 0;
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+				width: 100%;
+				gap: 4em;
+
+				li:hover:after {
+					width: 50%;
+				}
 			}
 		}
 	}
