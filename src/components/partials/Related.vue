@@ -54,22 +54,12 @@ export default {
 	}
 }
 
-.right {
-	margin: 40px 0;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	gap: 40px;
-}
-
-@media (min-width: 540px) {
-	.container {
-		flex-direction: row;
-	}
 }
 
 .left {
@@ -88,6 +78,7 @@ export default {
 }
 
 .right {
+	margin: 40px 0;
 	position: relative;
 
 	&::before {
@@ -99,6 +90,12 @@ export default {
 		background-size: 75% 75%;
 		z-index: -1;
 		opacity: 0.2;
+	}
+}
+
+@media (min-width: 540px) {
+	.container {
+		flex-direction: row;
 	}
 }
 </style>
