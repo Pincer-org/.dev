@@ -2,8 +2,8 @@
 	<div class="related">
 		<h2>Related projects</h2>
 
-		<div class="container">
-			<div class="left">
+		<div class="related-container">
+			<div class="related-container-left">
 				<h3>The Pincer CLI</h3>
 				<p>
 					In the intent to simplify pincer user life, we are building a console line interface tools that will bring
@@ -12,7 +12,7 @@
 				</p>
 				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/cli"/>
 			</div>
-			<div class="right">
+			<div class="related-container-right">
 				<h3>The Pincer Bot</h3>
 				<p>
 					Our discord server need a powerful yet fun bot to interact with and demonstrate the key features of our
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .related {
 	margin-bottom: 4em;
 
@@ -52,49 +52,49 @@ export default {
 	p {
 		text-align: justify;
 	}
-}
 
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	gap: 40px;
-}
+	&-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
 
-.left {
-	position: relative;
+		&-left {
+			position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		inset: 0;
+			&::before {
+				content: '';
+				position: absolute;
+				inset: 0;
 
-		background: url('../../assets/decorations/cli.svg') no-repeat center;
-		background-size: 75% 75%;
-		z-index: -1;
-		opacity: 0.2;
-	}
-}
+				background: url('../../assets/decorations/cli.svg') no-repeat center;
+				background-size: 75% 75%;
+				z-index: -1;
+				opacity: 0.2;
+			}
+		}
 
-.right {
-	margin: 40px 0;
-	position: relative;
+		&-right {
+			margin: 40px 0;
+			position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		inset: 0;
+			&::before {
+				content: '';
+				position: absolute;
+				inset: 0;
 
-		background: url('../../assets/decorations/robot.svg') no-repeat center;
-		background-size: 75% 75%;
-		z-index: -1;
-		opacity: 0.2;
+				background: url('../../assets/decorations/robot.svg') no-repeat center;
+				background-size: 75% 75%;
+				z-index: -1;
+				opacity: 0.2;
+			}
+		}
 	}
 }
 
 @media (min-width: 540px) {
-	.container {
+	.related-container {
 		flex-direction: row;
 	}
 }
