@@ -48,6 +48,7 @@ export default {
 
 	--button-color: #1475C3;
 	--button-shadow-color: #0d5894;
+	scrollbar-color: var(--button-color) var(--bg-color);
 }
 
 ::-webkit-scrollbar {
@@ -67,16 +68,6 @@ export default {
 	}
 }
 
-* {
-	/* Firefox scrollbar */
-	scrollbar-color: var(--button-color) var(--bg-color);
-
-	&::selection {
-		background-color: var(--bg-color-secondary);
-		color: var(--text-color-secondary);
-	}
-}
-
 body {
 	margin: 0;
 	color: var(--text-color);
@@ -92,6 +83,11 @@ main {
 	width: min(calc(100% - 40px), 1400px);
 	padding: 0 20px;
 	margin: 0 auto;
+
+	*::selection {
+		background-color: var(--bg-color-ternary);
+		color: var(--text-color-secondary);
+	}
 }
 
 a {
