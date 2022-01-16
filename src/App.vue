@@ -1,6 +1,6 @@
 <template>
 	<Header/>
-	<main>
+	<main id="main">
 		<Hero/>
 		<Pincer/>
 		<Team/>
@@ -77,7 +77,7 @@ body {
 	background-color: var(--bg-color);
 }
 
-main {
+#main {
 	display: grid;
 	gap: 4em;
 	width: min(calc(100% - 40px), 1400px);

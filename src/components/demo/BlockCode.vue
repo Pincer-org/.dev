@@ -86,7 +86,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .window {
 	padding: 0;
 	width: calc(100vw - 40px);

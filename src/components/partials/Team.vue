@@ -66,7 +66,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .team {
 	font-size: 0.6rem;
 	display: grid;

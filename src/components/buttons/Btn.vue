@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .btn {
 	font-size: 0.8em;
 	color: #fff;

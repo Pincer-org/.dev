@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 span {
 	&.p {
 		color: #B5AAFE

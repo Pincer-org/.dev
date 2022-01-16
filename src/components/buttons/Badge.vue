@@ -1,5 +1,5 @@
 <template>
-	<a v-bind:href=href tabindex="-1">
+	<a class="github-badge" v-bind:href=href tabindex="-1">
 		<img v-bind:src=badgeUrl v-bind:alt=alt>
 	</a>
 </template>
@@ -23,8 +23,8 @@ export default {
 }
 </script>
 
-<style scoped>
-a {
+<style>
+.github-badge {
 	user-select: none;
 }
 </style>
