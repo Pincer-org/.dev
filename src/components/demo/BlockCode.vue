@@ -27,7 +27,7 @@
 
 
 <T c="p">if</T> __name__ <T c="p">==</T> <T c="g">"__main__"</T>:
-  bot = <T c="b">Bot</T>(<T c="k">token</T><T c="p">=</T><T c="g">"<span id="token">super.secret.token</span>"</T>)
+  bot = <T c="b">Bot</T>(<T c="k">token</T><T c="p">=</T><T c="g">"<span id="token">{{token}}</span>"</T>)
   bot.<T c="b">run</T>()
 
 </code></pre>
@@ -35,48 +35,46 @@
 </template>
 
 <script>
-const base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-'
-
-const getTokenPart = (length) => {
-	let token = ''
-	for (let i = 0; i < length; i++) {
-		token += base64[Math.floor(Math.random() * base64.length)]
-	}
-	return token
-}
-
-const getToken = () => {
-	return getTokenPart(24) + '.' + getTokenPart(6) + '.' + getTokenPart(27)
-}
-
-
-window.onload = () => {
-	if (window.innerWidth < 580) {
-		return
-	}
-
-	const token = document.getElementById("token");
-
-	setInterval(() => {
-				token.innerHTML = getToken();
-			}, 3000
-	);
-}
-
 import T from './T.vue'
+
+const base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-'
 
 export default {
 	name: 'BlockCode',
 	components: {
 		T
 	},
+	mounted() {
+		if (window.innerWidth < 580) {
+			return
+		}
+
+		setInterval(() => {
+					this.token = this.getToken()
+				}, 3000
+		);
+	},
 	data() {
 		return {
+			token: 'super.secret.token',
 			closed: false,
 			hide: false
 		}
 	},
 	methods: {
+		getTokenPart(length) {
+			let token = ''
+			for (let i = 0; i < length; i++) {
+				token += base64[Math.floor(Math.random() * base64.length)]
+			}
+			return token
+		},
+		getToken() {
+			return this.getTokenPart(24)
+			+ '.' + this.getTokenPart(6)
+			+ '.' + this.getTokenPart(27)
+		},
+
 		close() {
 			this.closed = true
 
