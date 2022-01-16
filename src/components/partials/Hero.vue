@@ -173,10 +173,6 @@ export default {
 .explore {
 	position: relative;
 
-	h2 {
-		margin-top: 2rem;
-	}
-
 	&-container {
 		padding-left: 0;
 		display: grid;
@@ -184,12 +180,6 @@ export default {
 	}
 
 	&-item {
-		img {
-			width: 24px;
-			height: 24px;
-			filter: invert(1);
-		}
-
 		gap: 10px;
 		display: flex;
 		align-items: center;
@@ -199,6 +189,16 @@ export default {
 		&:hover, a:focus {
 			outline: 0;
 			text-decoration: underline;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+			filter: invert(1);
+		}
+
+		h2 {
+			margin-top: 2rem;
 		}
 	}
 
@@ -241,10 +241,8 @@ export default {
 		min-width: 300px;
 
 		&-container {
-			ul {
-				display: flex;
-				gap: 20px;
-			}
+			display: flex;
+			gap: 20px;
 		}
 	}
 

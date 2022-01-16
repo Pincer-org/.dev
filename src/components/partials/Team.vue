@@ -126,7 +126,7 @@ export default {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
 	.team {
 		grid-template-columns: 1fr 1fr 1fr;
 
