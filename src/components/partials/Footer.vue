@@ -11,7 +11,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer {
 	display: flex;
 	background-color: var(--bg-color-secondary);
@@ -20,9 +20,9 @@ export default {
 	flex-flow: column wrap;
 	padding: 1rem;
 	gap: 1em;
-}
 
-p {
-	margin: 0;
+	p {
+		margin: 0;
+	}
 }
 </style>
