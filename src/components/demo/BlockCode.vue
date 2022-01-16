@@ -3,9 +3,9 @@
 		<figcaption>
 			<p>bot.py</p>
 			<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<ellipse cx="32" cy="4" rx="4.00001" ry="4" fill="#DC5252" @click="close()"/>
-				<ellipse cx="18.0005" cy="4" rx="4.00001" ry="4" fill="#D6985E"/>
-				<ellipse cx="4.00001" cy="4" rx="4.00001" ry="4" fill="#8ECF4E"/>
+				<ellipse cx="32" cy="4" rx="4" ry="4" fill="#DC5252" @click="close()"/>
+				<ellipse cx="18" cy="4" rx="4" ry="4" fill="#D6985E"/>
+				<ellipse cx="4" cy="4" rx="4" ry="4" fill="#8ECF4E"/>
 			</svg>
 		</figcaption>
 		<pre><code>
