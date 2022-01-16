@@ -1,6 +1,6 @@
 <template>
-	<figure class="code" :class="{'closed': closed, 'hide': hide}">
-		<figcaption>
+	<figure class="window" :class="{'closed': closed, 'hide': hide}">
+		<figcaption class="window-header">
 			<p>bot.py</p>
 			<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="32" cy="4" rx="4" ry="4" fill="#DC5252" @click="close()"/>
@@ -8,7 +8,7 @@
 				<ellipse cx="4" cy="4" rx="4" ry="4" fill="#8ECF4E"/>
 			</svg>
 		</figcaption>
-		<pre><code>
+		<pre class="windows-container"><code id="bot-code">
 <T c="p">from</T> pincer <T c="p">import</T> Client, command
 <T c="p">from</T> pincer.objects <T c="p">import</T> MessageContext, Embed
 
@@ -87,12 +87,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-figure {
+.window {
 	padding: 0;
 	width: calc(100vw - 40px);
 	margin: 2em 0 0;
 
-	figcaption {
+	&-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -108,19 +108,13 @@ figure {
 		}
 	}
 
-	pre {
+	&-container {
 		margin: 0;
 		padding: 0 20px;
 		background: #363D4E;
 		border-bottom-left-radius: .5em;
 		border-bottom-right-radius: .5em;
 		line-height: .75em;
-	}
-
-	code {
-		font-family: "Fira Code", monospace;
-		font-size: .55em;
-		color: #B3BDDF;
 	}
 
 	&.closed {
@@ -130,7 +124,7 @@ figure {
 	&.hide {
 		animation: windowClose 1s cubic-bezier(.35, -0.21, .04, 1.52) reverse forwards;
 
-		& > figcaption, pre {
+		& > .window-header, pre {
 			display: none;
 		}
 
@@ -140,20 +134,26 @@ figure {
 	}
 }
 
+.bot-code {
+	font-family: "Fira Code", monospace;
+	font-size: .55em;
+	color: #B3BDDF;
+}
+
 @media (max-width: 580px) {
-	pre {
+	.windows-container {
 		overflow-x: scroll;
 	}
 }
 
 @media screen and (min-width: 720px) and (max-width: 979px) {
-	figure {
+	.window {
 		width: 100%;
 	}
 }
 
 @media screen and (min-width: 980px) {
-	.code {
+	.window {
 		animation: slideInTopFade 1s ease;
 		width: min(640px, 40vw);
 	}
