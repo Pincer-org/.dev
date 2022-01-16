@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-p {
+.about p {
 	text-align: justify;
 }
 
