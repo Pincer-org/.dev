@@ -15,7 +15,7 @@
 			people have contributed to make the package better while the alpha version is still in development!
 		</p>
 		<div class="details">
-			<div class="left">
+			<div class="details-left">
 				<h3>You can make the change</h3>
 				<p>
 					Participating in the collaboration of Pincer is really easy, as our community is welcoming any level of
@@ -27,7 +27,7 @@
 				</p>
 				<BlueButton text="Start Contributing" link="https://github.com/Pincer-org/issues"/>
 			</div>
-			<div class="right">
+			<div class="details-right">
 				<h3>We want to make it right</h3>
 				<p>
 					With Pincer, we are taking the time to write more pythonic code, by following the trending rules of the Python
@@ -63,35 +63,35 @@ export default {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-}
 
-.left {
-	position: relative;
+	&-left {
+		position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		inset: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
 
-		background: url('../../assets/decorations/pull_request.svg') no-repeat center;
-		background-size: 75% 75%;
-		z-index: -1;
-		opacity: 0.2;
+			background: url('../../assets/decorations/pull_request.svg') no-repeat center;
+			background-size: 75% 75%;
+			z-index: -1;
+			opacity: 0.2;
+		}
 	}
-}
 
-.right {
-	position: relative;
+	&-right {
+		position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		inset: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
 
-		background: url('../../assets/decorations/magnifying-glass.svg') no-repeat center;
-		background-size: 75% 75%;
-		z-index: -1;
-		opacity: 0.2;
+			background: url('../../assets/decorations/magnifying-glass.svg') no-repeat center;
+			background-size: 75% 75%;
+			z-index: -1;
+			opacity: 0.2;
+		}
 	}
 }
 
