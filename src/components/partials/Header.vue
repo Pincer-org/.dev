@@ -58,25 +58,6 @@ export default {
 <style lang="scss">
 $header-height: 64px;
 
-@keyframes spinFade {
-	0% {
-		opacity: 0;
-		transform: rotate(-360deg);
-	}
-}
-
-@keyframes Giggle {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(5deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
-}
-
 #hamburger {
 	cursor: pointer;
 
@@ -94,6 +75,9 @@ $header-height: 64px;
 	}
 
 	&.rotated {
+		transition: 0.3s ease-in-out;
+		display: flex;
+
 		svg g {
 			transform: translateX(3px);
 
@@ -112,9 +96,6 @@ $header-height: 64px;
 			}
 		}
 	}
-
-	transition: 0.3s ease-in-out;
-	display: flex;
 }
 
 .header-container {
@@ -183,22 +164,22 @@ $header-height: 64px;
 		a {
 			font-size: 1em;
 			position: relative;
-		}
 
-		a::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 0;
-			transition: all 0.3s ease-in-out;
-			background-color: var(--text-color-secondary);
-			height: 2px;
-		}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				transition: all 0.3s ease-in-out;
+				background-color: var(--text-color-secondary);
+				height: 2px;
+			}
 
-		a:hover, a:focus {
-			outline: none;
-			color: var(--text-color-secondary);
+			&:hover, a:focus {
+				outline: none;
+				color: var(--text-color-secondary);
+			}
 
 			&::after {
 				width: 100%;
@@ -244,6 +225,25 @@ $header-height: 64px;
 				}
 			}
 		}
+	}
+}
+
+@keyframes spinFade {
+	0% {
+		opacity: 0;
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes Giggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }
 </style>

@@ -31,7 +31,7 @@ import BlueButton from '../buttons/Btn.vue';
 export default {
 	name: 'Related',
 	components: {
-		BlueButton,
+		BlueButton
 	}
 }
 </script>
@@ -39,19 +39,6 @@ export default {
 <style lang="scss">
 .related {
 	margin-bottom: 4em;
-
-	h2 {
-		margin-bottom: 0;
-	}
-
-	h3 {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	p {
-		text-align: justify;
-	}
 
 	&-container {
 		display: flex;
@@ -90,6 +77,19 @@ export default {
 				opacity: 0.2;
 			}
 		}
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	p {
+		text-align: justify;
 	}
 }
 

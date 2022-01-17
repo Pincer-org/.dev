@@ -191,14 +191,14 @@ export default {
 			text-decoration: underline;
 		}
 
+		h2 {
+			margin-top: 2rem;
+		}
+
 		img {
 			width: 24px;
 			height: 24px;
 			filter: invert(1);
-		}
-
-		h2 {
-			margin-top: 2rem;
 		}
 	}
 

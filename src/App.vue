@@ -48,6 +48,7 @@ export default {
 
 	--button-color: #1475C3;
 	--button-shadow-color: #0d5894;
+
 	scrollbar-color: var(--button-color) var(--bg-color);
 }
 
@@ -75,6 +76,15 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	background-color: var(--bg-color);
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	img {
+		user-select: none;
+	}
 }
 
 #main {
@@ -88,15 +98,6 @@ body {
 		background-color: var(--bg-color-ternary);
 		color: var(--text-color-secondary);
 	}
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-img {
-	user-select: none;
 }
 
 @keyframes windowClose {

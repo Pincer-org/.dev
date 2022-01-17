@@ -43,6 +43,11 @@ export default {
 	align-items: center;
 	gap: .5em;
 
+	p {
+		font-size: .75em;
+		margin: 0;
+	}
+
 	svg {
 		margin-top: .25rem;
 		margin-bottom: .2rem;
@@ -52,11 +57,6 @@ export default {
 	img {
 		height: .8em;
 		width: .8em;
-	}
-
-	p {
-		font-size: .75em;
-		margin: 0;
 	}
 }
 
