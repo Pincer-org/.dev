@@ -179,10 +179,10 @@ $header-height: 64px;
 			&:hover, a:focus {
 				outline: none;
 				color: var(--text-color-secondary);
-			}
 
-			&::after {
-				width: 100%;
+				&::after {
+					width: 100%;
+				}
 			}
 		}
 	}
