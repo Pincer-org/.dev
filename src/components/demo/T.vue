@@ -1,43 +1,43 @@
 <template>
-  <span v-bind:class=c>
-    <slot></slot>
-  </span>
+	<span v-bind:class="c">
+		<slot></slot>
+	</span>
 </template>
 
 <script>
 export default {
 	props: {
 		c: {
-			type: String
-		}
-	}
-}
+			type: String,
+		},
+	},
+};
 </script>
 
 <style lang="scss">
 span {
 	&.p {
-		color: #B5AAFE
+		color: #b5aafe;
 	}
 
 	&.y {
-		color: #FEDA8C
+		color: #feda8c;
 	}
 
 	&.b {
-		color: #6FAFFE
+		color: #6faffe;
 	}
 
 	&.r {
-		color: #FF757F
+		color: #ff757f;
 	}
 
 	&.g {
-		color: #78EBB7
+		color: #78ebb7;
 	}
 
 	&.k {
-		color: #F2C1FE
+		color: #f2c1fe;
 	}
 }
 </style>

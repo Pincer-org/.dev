@@ -6,8 +6,7 @@
 			from ground zero. This decision is based on the fact that the current implementation of the old library does not
 			allow for a easy integration of slash commands. Indeed, the whole package has been built to use message content as
 			the way to create commands, using a bot prefix. Changing the core mechanics of discord.py would require to rewrite
-			a
-			lot of it. Pincer on the other hand is built to take fully the new integration and slash commands system.
+			a lot of it. Pincer on the other hand is built to take fully the new integration and slash commands system.
 		</p>
 		<p>
 			The project has also been started by Sigmanificient, a student developer in order to learn more about open-source
@@ -19,13 +18,11 @@
 				<h3>You can make the change</h3>
 				<p>
 					Participating in the collaboration of Pincer is really easy, as our community is welcoming any level of
-					developer
-					and always ready to help you! We are not just building an API wrapper, we are creating the library you want to
-					use. Tired of having everything to change across all your bots? Join our contributors by Implementing your
-					code
-					in our project!
+					developer and always ready to help you! We are not just building an API wrapper, we are creating the library
+					you want to use. Tired of having everything to change across all your bots? Join our contributors by
+					Implementing your code in our project!
 				</p>
-				<BlueButton text="Start Contributing" link="https://github.com/Pincer-org/issues"/>
+				<BlueButton text="Start Contributing" link="https://github.com/Pincer-org/issues" />
 			</div>
 			<div class="details-right">
 				<h3>We want to make it right</h3>
@@ -35,22 +32,21 @@
 					sphinx, pyproject, setup.cfg, pytest and pre-commit to create our dream library with the best developer
 					environment.
 				</p>
-				<BlueButton text="Lib Explanations" link="https://docs.pincer.dev"/>
+				<BlueButton text="Lib Explanations" link="https://docs.pincer.dev" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-
 import BlueButton from "@/components/buttons/Btn";
 
 export default {
-	name: 'Pincer',
+	name: "Pincer",
 	components: {
-		BlueButton
-	}
-}
+		BlueButton,
+	},
+};
 </script>
 
 <style lang="scss" scoped>
@@ -68,11 +64,11 @@ export default {
 		position: relative;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			inset: 0;
 
-			background: url('../../assets/decorations/pull_request.svg') no-repeat center;
+			background: url("../../assets/decorations/pull_request.svg") no-repeat center;
 			background-size: 75% 75%;
 			z-index: -1;
 			opacity: 0.2;
@@ -83,11 +79,11 @@ export default {
 		position: relative;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			inset: 0;
 
-			background: url('../../assets/decorations/magnifying-glass.svg') no-repeat center;
+			background: url("../../assets/decorations/magnifying-glass.svg") no-repeat center;
 			background-size: 75% 75%;
 			z-index: -1;
 			opacity: 0.2;

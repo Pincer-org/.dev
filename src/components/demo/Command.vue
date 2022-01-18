@@ -1,7 +1,7 @@
 <template>
 	<div class="command">
 		<div class="command-up">
-			<img src="@/assets/logo/icon.svg" alt="Pincer logo">
+			<img src="@/assets/logo/icon.svg" alt="Pincer logo" />
 			<header>
 				<h1>/say <span class="block">message</span></h1>
 				<p>Send a custom message!</p>
@@ -9,9 +9,9 @@
 		</div>
 		<div class="command-down">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<circle cx="12" cy="12" r="12" fill="#C4C4C4"/>
-				<rect x="5" y="10.5" width="14" height="3" fill="#40444B"/>
-				<rect x="10.5" y="19" width="14" height="3" transform="rotate(-90 10.5 19)" fill="#40444B"/>
+				<circle cx="12" cy="12" r="12" fill="#C4C4C4" />
+				<rect x="5" y="10.5" width="14" height="3" fill="#40444B" />
+				<rect x="10.5" y="19" width="14" height="3" transform="rotate(-90 10.5 19)" fill="#40444B" />
 			</svg>
 			<p>/say <span class="block">message: Hello, World!</span></p>
 		</div>
@@ -20,15 +20,16 @@
 
 <script>
 export default {
-	name: 'Command'
-}
+	name: "Command",
+};
 </script>
 
 <style lang="scss" scoped>
 .command {
-	font-size: .5em;
+	font-size: 0.5em;
 
-	&-up, &-down {
+	&-up,
+	&-down {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -44,8 +45,8 @@ export default {
 
 	&-up {
 		background-color: var(--bg-color-secondary);
-		border-top-left-radius: .5em;
-		border-top-right-radius: .5em;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
 
 		h1 {
 			font-size: 1.25em;
@@ -53,7 +54,7 @@ export default {
 			display: flex;
 			align-items: center;
 			margin: 0 0 4px;
-			gap: 4px
+			gap: 4px;
 		}
 
 		img {
@@ -63,8 +64,8 @@ export default {
 
 	&-down {
 		background-color: var(--discord-color-lighter);
-		border-bottom-left-radius: .5em;
-		border-bottom-right-radius: .5em;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
 		padding-left: 3em;
 		gap: 1rem;
 
@@ -75,10 +76,10 @@ export default {
 }
 
 .block {
-	font-size: .75em;
+	font-size: 0.75em;
 	background: var(--discord-color-darker);
-	padding: .2rem .4rem;
-	border-radius: .25rem;
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.25rem;
 	color: var(--text-color-secondary);
 }
 

@@ -8,62 +8,61 @@
 		</p>
 		<div class="team">
 			<figure class="team-member">
-				<img src="@/assets/members/Sigma.png" alt="sigma"/>
+				<img src="@/assets/members/Sigma.png" alt="sigma" />
 				<figcaption>
 					<a href="https://github.com/Sigmanificient">Sigmanificient</a>
 					<p>Founder</p>
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/Arthurdw.png" alt="arthurdw"/>
+				<img src="@/assets/members/Arthurdw.png" alt="arthurdw" />
 				<figcaption>
 					<a href="https://github.com/Arthurdw">Arthurdw</a>
 					<p>Co-Founder</p>
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/Lunarmagpie.png" alt="lunarmagpie"/>
+				<img src="@/assets/members/Lunarmagpie.png" alt="lunarmagpie" />
 				<figcaption>
 					<a href="https://github.com/Lunarmagpie">Lunarmagpie</a>
 					<p>Main Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/Endercheif.png" alt="endercheif"/>
+				<img src="@/assets/members/Endercheif.png" alt="endercheif" />
 				<figcaption>
 					<a href="https://github.com/Endercheif">Endercheif</a>
 					<p>Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/Trag1c.png" alt="trag1c"/>
+				<img src="@/assets/members/Trag1c.png" alt="trag1c" />
 				<figcaption>
 					<a href="https://github.com/trag1c">trag1c</a>
 					<p>Maintainer</p>
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/_other.png" alt="someone else"/>
+				<img src="@/assets/members/_other.png" alt="someone else" />
 				<figcaption>
 					<a href="https://github.com">Maybe You?</a>
 					<p>Future Maintainer</p>
 				</figcaption>
 			</figure>
 		</div>
-		<BlueButton text="Apply to join" link="mailto:contact@Pincer.dev"/>
+		<BlueButton text="Apply to join" link="mailto:contact@Pincer.dev" />
 	</div>
 </template>
 
 <script>
-import BlueButton from '../buttons/Btn.vue'
+import BlueButton from "../buttons/Btn.vue";
 
 export default {
-	name: 'Team',
+	name: "Team",
 	components: {
-		BlueButton
-	}
-}
-
+		BlueButton,
+	},
+};
 </script>
 
 <style lang="scss">
@@ -104,10 +103,10 @@ export default {
 		position: relative;
 
 		&::before {
-			content: '';
+			content: "";
 			inset: 0;
 			position: absolute;
-			background: url('../../assets/decorations/wave.svg') no-repeat 50% 60%;
+			background: url("../../assets/decorations/wave.svg") no-repeat 50% 60%;
 			background-size: 75%;
 			z-index: -1;
 			opacity: 0.2;
@@ -118,13 +117,14 @@ export default {
 		}
 	}
 
-	a:focus, a:hover {
+	a:focus,
+	a:hover {
 		text-decoration: underline;
 		outline: none;
 	}
 }
 
-@media(min-width: 820px) {
+@media (min-width: 820px) {
 	.team {
 		grid-template-columns: 1fr 1fr 1fr;
 

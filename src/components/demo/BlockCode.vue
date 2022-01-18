@@ -1,11 +1,11 @@
 <template>
-	<figure class="window" :class="{'closed': closed, 'hide': hide}">
+	<figure class="window" :class="{ closed: closed, hide: hide }">
 		<figcaption class="window-header">
 			<p>bot.py</p>
 			<svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<ellipse cx="32" cy="4" rx="4" ry="4" fill="#DC5252" @click="close()"/>
-				<ellipse cx="18" cy="4" rx="4" ry="4" fill="#D6985E"/>
-				<ellipse cx="4" cy="4" rx="4" ry="4" fill="#8ECF4E"/>
+				<ellipse cx="32" cy="4" rx="4" ry="4" fill="#DC5252" @click="close()" />
+				<ellipse cx="18" cy="4" rx="4" ry="4" fill="#D6985E" />
+				<ellipse cx="4" cy="4" rx="4" ry="4" fill="#8ECF4E" />
 			</svg>
 		</figcaption>
 		<pre class="window-container"><code id="bot-code">
@@ -35,55 +35,52 @@
 </template>
 
 <script>
-import T from './T.vue'
+import T from "./T.vue";
 
-const base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-'
+const base64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-";
 
 export default {
-	name: 'BlockCode',
+	name: "BlockCode",
 	components: {
-		T
+		T,
 	},
 	mounted() {
 		if (window.innerWidth < 580) {
-			return
+			return;
 		}
 
 		setInterval(() => {
-					this.token = this.getToken()
-				}, 3000
-		);
+			this.token = this.getToken();
+		}, 3000);
 	},
 	data() {
 		return {
-			token: 'super.secret.token',
+			token: "super.secret.token",
 			closed: false,
-			hide: false
-		}
+			hide: false,
+		};
 	},
 	methods: {
 		getTokenPart(length) {
-			let token = ''
+			let token = "";
 			for (let i = 0; i < length; i++) {
-				token += base64[Math.floor(Math.random() * base64.length)]
+				token += base64[Math.floor(Math.random() * base64.length)];
 			}
-			return token
+			return token;
 		},
 		getToken() {
-			return this.getTokenPart(24)
-			+ '.' + this.getTokenPart(6)
-			+ '.' + this.getTokenPart(27)
+			return this.getTokenPart(24) + "." + this.getTokenPart(6) + "." + this.getTokenPart(27);
 		},
 
 		close() {
-			this.closed = true
+			this.closed = true;
 
 			setTimeout(() => {
-				this.hide = true
-			}, 1000)
-		}
-	}
-}
+				this.hide = true;
+			}, 1000);
+		},
+	},
+};
 </script>
 
 <style lang="scss">
@@ -97,34 +94,35 @@ export default {
 		justify-content: space-between;
 		align-items: center;
 
-		background: #2B3448;
+		background: #2b3448;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.33);
 		padding: 10px 20px;
-		border-radius: .5em .5em 0 0;
+		border-radius: 0.5em 0.5em 0 0;
 
 		p {
 			margin: 0;
-			font-size: .6em;
+			font-size: 0.6em;
 		}
 	}
 
 	&-container {
 		margin: 0;
 		padding: 0 20px;
-		background: #363D4E;
-		border-bottom-left-radius: .5em;
-		border-bottom-right-radius: .5em;
-		line-height: .75em;
+		background: #363d4e;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+		line-height: 0.75em;
 	}
 
 	&.closed {
-		animation: windowClose .5s ease-in-out forwards;
+		animation: windowClose 0.5s ease-in-out forwards;
 	}
 
 	&.hide {
-		animation: windowClose 1s cubic-bezier(.35, -0.21, .04, 1.52) reverse forwards;
+		animation: windowClose 1s cubic-bezier(0.35, -0.21, 0.04, 1.52) reverse forwards;
 
-		& > .window-header, pre {
+		& > .window-header,
+		pre {
 			display: none;
 		}
 
@@ -136,8 +134,8 @@ export default {
 
 #bot-code {
 	font-family: "Fira Code", monospace;
-	font-size: .55em;
-	color: #B3BDDF;
+	font-size: 0.55em;
+	color: #b3bddf;
 }
 
 @media (max-width: 580px) {

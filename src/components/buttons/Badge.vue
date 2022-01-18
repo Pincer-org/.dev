@@ -1,6 +1,6 @@
 <template>
-	<a class="github-badge" v-bind:href=href tabindex="-1">
-		<img v-bind:src=badgeUrl v-bind:alt=alt>
+	<a class="github-badge" :href="href" tabindex="-1">
+		<img :src="badgeUrl" :alt="alt" />
 	</a>
 </template>
 
@@ -9,18 +9,18 @@ export default {
 	props: {
 		href: {
 			type: String,
-			default: '#'
+			default: "#",
 		},
 		badgeUrl: {
 			type: String,
-			default: ''
+			default: "",
 		},
 		alt: {
 			type: String,
-			default: ''
-		}
-	}
-}
+			default: "",
+		},
+	},
+};
 </script>
 
 <style>

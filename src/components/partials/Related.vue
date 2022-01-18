@@ -10,7 +10,7 @@
 					automation to the pincer package. Commands to import templates, create cogs and commands are going to make the
 					developer experience easier and straight forward, faster and open to beginners.
 				</p>
-				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/cli"/>
+				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/cli" />
 			</div>
 			<div class="related-container-right">
 				<h3>The Pincer Bot</h3>
@@ -19,21 +19,21 @@
 					library. It will also be a good example for an advanced Bot, running in production, that new users can explore
 					to understand how they can use the library and take advantage of it.
 				</p>
-				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/bot"/>
+				<BlueButton text="Github Repository" link="https://github.com/Pincer-org/bot" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import BlueButton from '../buttons/Btn.vue';
+import BlueButton from "../buttons/Btn.vue";
 
 export default {
-	name: 'Related',
+	name: "Related",
 	components: {
-		BlueButton
-	}
-}
+		BlueButton,
+	},
+};
 </script>
 
 <style lang="scss">
@@ -51,11 +51,11 @@ export default {
 			position: relative;
 
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				inset: 0;
 
-				background: url('../../assets/decorations/cli.svg') no-repeat center;
+				background: url("../../assets/decorations/cli.svg") no-repeat center;
 				background-size: 75% 75%;
 				z-index: -1;
 				opacity: 0.2;
@@ -67,11 +67,11 @@ export default {
 			position: relative;
 
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				inset: 0;
 
-				background: url('../../assets/decorations/robot.svg') no-repeat center;
+				background: url("../../assets/decorations/robot.svg") no-repeat center;
 				background-size: 75% 75%;
 				z-index: -1;
 				opacity: 0.2;

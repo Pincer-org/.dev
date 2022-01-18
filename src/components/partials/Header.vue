@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<div class="header-container">
-			<nav class="header-nav" :class="{ 'open' : menuOpen }">
+			<nav class="header-nav" :class="{ open: menuOpen }">
 				<ul>
 					<li>
 						<a href="https://discord/pincer">Discord</a>
@@ -21,17 +21,17 @@
 				<div class="left">
 					<a href="/" class="logo">
 						<div class="spin-container">
-							<img alt="logo" src="@/assets/logo/icon.svg" width="32"/>
+							<img alt="logo" src="@/assets/logo/icon.svg" width="32" />
 						</div>
 						Pincer
 					</a>
 				</div>
-				<a id="hamburger" class="hamburger" @click="toggleMenu()" :class="{ 'rotated' : menuOpen }">
+				<a id="hamburger" class="hamburger" @click="toggleMenu()" :class="{ rotated: menuOpen }">
 					<svg width="24" height="24" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g fill="black">
-							<path d="M0 0H32V3H0V0Z"/>
-							<path d="M0 12H32V15H0V12Z"/>
-							<path d="M0 24H32V27H0V24Z"/>
+							<path d="M0 0H32V3H0V0Z" />
+							<path d="M0 12H32V15H0V12Z" />
+							<path d="M0 24H32V27H0V24Z" />
 						</g>
 					</svg>
 				</a>
@@ -44,15 +44,15 @@
 export default {
 	data() {
 		return {
-			menuOpen: false
-		}
+			menuOpen: false,
+		};
 	},
 	methods: {
 		toggleMenu() {
-			this.menuOpen = !this.menuOpen
-		}
-	}
-}
+			this.menuOpen = !this.menuOpen;
+		},
+	},
+};
 </script>
 
 <style lang="scss">
@@ -87,7 +87,7 @@ $header-height: 64px;
 				}
 
 				&:nth-child(2) {
-					transform: scaleX(0)
+					transform: scaleX(0);
 				}
 
 				&:nth-child(3) {
@@ -110,8 +110,9 @@ $header-height: 64px;
 			font-size: 18px;
 			gap: 20px;
 
-			&:hover img, &:focus img {
-				animation: Giggle 1s cubic-bezier(.35, -0.21, .04, 1.52) infinite;
+			&:hover img,
+			&:focus img {
+				animation: Giggle 1s cubic-bezier(0.35, -0.21, 0.04, 1.52) infinite;
 			}
 
 			&:focus {
@@ -132,7 +133,7 @@ $header-height: 64px;
 }
 
 .spin-container {
-	animation: spinFade 1s cubic-bezier(.35, -0.21, .04, 1.52);
+	animation: spinFade 1s cubic-bezier(0.35, -0.21, 0.04, 1.52);
 	display: flex;
 }
 
@@ -146,7 +147,8 @@ $header-height: 64px;
 	transition: transform 0.3s ease-in-out;
 	overflow-x: hidden;
 
-	&.open, &:focus-within {
+	&.open,
+	&:focus-within {
 		transform: translateY(0);
 	}
 
@@ -166,7 +168,7 @@ $header-height: 64px;
 			position: relative;
 
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -176,7 +178,8 @@ $header-height: 64px;
 				height: 2px;
 			}
 
-			&:hover, a:focus {
+			&:hover,
+			a:focus {
 				outline: none;
 				color: var(--text-color-secondary);
 

@@ -1,12 +1,12 @@
 <template>
-	<Header/>
+	<Header />
 	<main id="main">
-		<Hero/>
-		<Pincer/>
-		<Team/>
-		<Related/>
+		<Hero />
+		<Pincer />
+		<Team />
+		<Related />
 	</main>
-	<Footer/>
+	<Footer />
 </template>
 
 <script>
@@ -18,35 +18,35 @@ import Related from "@/components/partials/Related.vue";
 import Footer from "@/components/partials/Footer.vue";
 
 export default {
-	name: 'App',
+	name: "App",
 	components: {
 		Header,
 		Hero,
 		Pincer,
 		Team,
 		Related,
-		Footer
+		Footer,
 	},
-}
+};
 </script>
 
 <style lang="scss">
 :root {
 	scroll-behavior: smooth;
-	--text-color: #FFFFFF;
-	--text-color-secondary: #DCDDEA;
+	--text-color: #ffffff;
+	--text-color-secondary: #dcddea;
 
 	--bg-color: #222635;
-	--bg-color-secondary: #2B3448;
-	--bg-color-ternary: #303A4F;
+	--bg-color-secondary: #2b3448;
+	--bg-color-ternary: #303a4f;
 
-	--discord-color-darker: #191C2B;
-	--discord-color-lighter: #363D4E;
+	--discord-color-darker: #191c2b;
+	--discord-color-lighter: #363d4e;
 
-	--discord-ping-color: #3B406F;
-	--discord-badge-color: #5865F2;
+	--discord-ping-color: #3b406f;
+	--discord-badge-color: #5865f2;
 
-	--button-color: #1475C3;
+	--button-color: #1475c3;
 	--button-shadow-color: #0d5894;
 
 	scrollbar-color: var(--button-color) var(--bg-color);
@@ -73,7 +73,7 @@ body {
 	margin: 0;
 	color: var(--text-color);
 	font-size: clamp(12px, 1vw, 24px);
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	background-color: var(--bg-color);
 
@@ -151,5 +151,4 @@ body {
 		opacity: 1;
 	}
 }
-
 </style>

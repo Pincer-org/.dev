@@ -1,18 +1,18 @@
 <template>
-	<a class="btn" v-bind:href=link target="_blank">{{ text }}</a>
+	<a class="btn" :href="link" target="_blank">{{ text }}</a>
 </template>
 
 <script>
 export default {
 	props: {
 		text: {
-			type: String
+			type: String,
 		},
 		link: {
-			type: String
+			type: String,
 		},
-	}
-}
+	},
+};
 </script>
 
 <style lang="scss">
