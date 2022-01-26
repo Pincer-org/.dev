@@ -2,8 +2,8 @@
 	<div class="team-container">
 		<h2>Meet our core team</h2>
 		<p>
-			The Pincer core team contains the founders and contributors that has been giving a lot of their time to implement
-			essentials features of the library. They have an extended knowledge on the most critical features and can help you
+			The Pincer core team contains the founders and contributors that have been giving a lot of their time to implement
+			the essential features of the library. They have an extended knowledge on the most critical features and can help you
 			along the way.
 		</p>
 		<div class="team">
@@ -36,7 +36,7 @@
 				</figcaption>
 			</figure>
 			<figure class="team-member">
-				<img src="@/assets/members/Trag1c.png" alt="trag1c" />
+				<img src="@/assets/members/trag1c.png" alt="trag1c" />
 				<figcaption>
 					<a href="https://github.com/trag1c">trag1c</a>
 					<p>Maintainer</p>
@@ -50,7 +50,7 @@
 				</figcaption>
 			</figure>
 		</div>
-		<BlueButton text="Apply to join" link="mailto:contact@Pincer.dev" />
+		<BlueButton text="Apply To Join" link="mailto:contact@Pincer.dev" />
 	</div>
 </template>
 
