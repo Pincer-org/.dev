@@ -51,7 +51,7 @@
 						badge-url="https://img.shields.io/github/commit-activity/m/Pincer-org/Pincer?label=commits"
 						alt="GitHub commit activity"
 					/>
-					<Badge href="/" badge-url="https://img.shields.io/github/license/Pincer-org/Pince" alt="GitHub" />
+					<Badge href="/" badge-url="https://img.shields.io/github/license/Pincer-org/Pincer" alt="GitHub" />
 					<Badge
 						href="https://discord.gg/pincer"
 						badge-url="https://img.shields.io/discord/881531065859190804"
