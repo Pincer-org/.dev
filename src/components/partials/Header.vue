@@ -4,7 +4,7 @@
 			<nav class="header-nav" :class="{ open: menuOpen }">
 				<ul>
 					<li>
-						<a href="https://discord/pincer">Discord</a>
+						<a href="https://discord.gg/pincer">Discord</a>
 					</li>
 					<li>
 						<a href="https://pypi.org/project/Pincer">PyPI</a>

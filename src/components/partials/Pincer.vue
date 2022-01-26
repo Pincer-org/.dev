@@ -1,16 +1,16 @@
 <template>
 	<div id="more" class="about">
-		<h2>Pincer, the discord lib from scratch.</h2>
+		<h2>Pincer, the Discord lib from scratch.</h2>
 		<p>
-			After the announcement of discord.py dropping maintenance, we took the decision to build a new API wrapper, built
+			After the announcement of discord.py dropping maintenance, we decided to build a new API wrapper, built
 			from ground zero. This decision is based on the fact that the current implementation of the old library does not
 			allow for a easy integration of slash commands. Indeed, the whole package has been built to use message content as
 			the way to create commands, using a bot prefix. Changing the core mechanics of discord.py would require to rewrite
 			a lot of it. Pincer on the other hand is built to take fully the new integration and slash commands system.
 		</p>
 		<p>
-			The project has also been started by Sigmanificient, a student developer in order to learn more about open-source
-			management, Github maintaining and Python. Today, Pincer has been stared over 80 times on Github, and more than 20
+			The project has also been started by Sigmanificient, a student developer to learn more about open-source
+			management, GitHub maintaining and Python. Today, Pincer has been starred over 80 times on GitHub, and more than 20
 			people have contributed to make the package better while the alpha version is still in development!
 		</p>
 		<div class="details">
@@ -20,7 +20,7 @@
 					Participating in the collaboration of Pincer is really easy, as our community is welcoming any level of
 					developer and always ready to help you! We are not just building an API wrapper, we are creating the library
 					you want to use. Tired of having everything to change across all your bots? Join our contributors by
-					Implementing your code in our project!
+					implementing your code in our project!
 				</p>
 				<BlueButton text="Start Contributing" link="https://github.com/Pincer-org/issues" />
 			</div>

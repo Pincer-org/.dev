@@ -53,7 +53,7 @@
 					/>
 					<Badge href="/" badge-url="https://img.shields.io/github/license/Pincer-org/Pince" alt="GitHub" />
 					<Badge
-						href="https://discord.gg/pince"
+						href="https://discord.gg/pincer"
 						badge-url="https://img.shields.io/discord/881531065859190804"
 						alt="Discord"
 					/>
@@ -65,10 +65,10 @@
 				</div>
 
 				<p>
-					🚀 The snappy asynchronous discord api wrapper API wrapper written with aiohttp & websockets for anyone in the
+					🚀 The snappy asynchronous Discord API wrapper written with aiohttp for anyone in the
 					Python community to build their bot with.
 				</p>
-				<Btn text="Learn more" @click="scrollDown()" />
+				<Btn text="Learn More" @click="scrollDown()" />
 			</div>
 
 			<div class="explore">
@@ -77,12 +77,12 @@
 				<nav>
 					<ul class="explore-container">
 						<li class="explore-item">
-							<img src="@/assets/icons/github.svg" alt="Github" />
-							<a href="https://github.com/pincer-org/pincer">Take o look at the GitHub repository</a>
+							<img src="@/assets/icons/github.svg" alt="GitHub" />
+							<a href="https://github.com/pincer-org/pincer">Take a look at the GitHub repository</a>
 						</li>
 						<li class="explore-item">
 							<img src="@/assets/icons/discord.svg" alt="Discord" />
-							<a href="https://discord/pincer">Join our Discord community</a>
+							<a href="https://discord.gg/pincer">Join our Discord community</a>
 						</li>
 						<li class="explore-item">
 							<img src="@/assets/icons/pypi.svg" alt="PyPI" />
