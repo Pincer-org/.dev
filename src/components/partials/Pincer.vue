@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import BlueButton from "@/components/buttons/Btn";
+import BlueButton from "@/components/buttons/Btn.vue";
 
 export default {
   name: "Pincer",
