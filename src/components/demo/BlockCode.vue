@@ -51,6 +51,13 @@ export default {
   components: {
     T,
   },
+  data() {
+    return {
+      token: "super.secret.token",
+      closed: false,
+      hide: false,
+    };
+  },
   mounted() {
     if (window.innerWidth < 580) {
       return;
@@ -59,13 +66,6 @@ export default {
     setInterval(() => {
       this.token = this.getToken();
     }, 3000);
-  },
-  data() {
-    return {
-      token: "super.secret.token",
-      closed: false,
-      hide: false,
-    };
   },
   methods: {
     getTokenPart(length) {
