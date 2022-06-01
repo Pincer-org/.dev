@@ -7,9 +7,11 @@ export default {
   props: {
     text: {
       type: String,
+      required: true,
     },
     link: {
       type: String,
+      required: true,
     },
   },
 };

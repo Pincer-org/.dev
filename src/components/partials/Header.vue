@@ -29,8 +29,8 @@
         <a
           id="hamburger"
           class="hamburger"
-          @click="toggleMenu()"
           :class="{ rotated: menuOpen }"
+          @click="toggleMenu()"
         >
           <svg
             width="24"
