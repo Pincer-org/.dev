@@ -136,12 +136,12 @@
 </template>
 
 <script>
-import Btn from "../buttons/Btn.vue";
-import Badge from "../buttons/Badge.vue";
+import Btn from "@/components/buttons/Btn.vue";
+import Badge from "@/components/buttons/Badge.vue";
 
-import BlockCode from "../demo/BlockCode.vue";
-import Command from "../demo/Command.vue";
-import Embed from "../demo/Embed.vue";
+import BlockCode from "@/components/demo/BlockCode.vue";
+import Command from "@/components/demo/Command.vue";
+import Embed from "@/components/demo/Embed.vue";
 
 export default {
   components: {

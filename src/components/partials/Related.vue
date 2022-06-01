@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import BlueButton from "../buttons/Btn.vue";
+import BlueButton from "@/components/buttons/Btn.vue";
 
 export default {
   name: "Related",
